@@ -9,6 +9,37 @@ const programList = document.querySelector('.studying-programs__list');
 
 document.addEventListener('scroll', colorHeader);
 programList.addEventListener('pointerdown', toggleProgramList);
+programList.addEventListener('pointerdown', toggleIcon);
+
+colorHeader();
+
+$(document).ready(function(){
+  $('.image-slider').slick({
+    dots: false,
+    slidesToShow: 1,
+  	slidesToScroll: 1,
+  	arrows: false,
+    draggable: true,
+    infinite: false,
+    swipe: true,
+    swipeToSlide: true,
+    // asNavFor: 'nav-slider'
+  });
+
+  $('.nav-slider').slick({
+    dots: false,
+    draggable: true,
+    infinite: false,
+    swipe: true,
+    swipeToSlide: true,
+    slidesToShow: 7,
+  	slidesToScroll: 1,
+ 	asNavFor: '.image-slider',
+ 	// variableWidth: true,
+ 	focusOnSelect: true
+  });
+});
+
 
 function colorHeader() {
 	if (window.pageYOffset == 0) {
@@ -17,6 +48,18 @@ function colorHeader() {
 	}
 
 	header.classList.add('header_scrolled');
+}
+
+function toggleIcon(event) {
+	let target = event.target.closest('.program__heading');
+	if (! target) return;
+
+	let span = target.querySelector('span');
+	if (span.innerHTML == '+') {
+		span.innerHTML = "\u2212";
+	} else {
+		span.innerHTML = '+';
+	}
 }
 
 function toggleProgramList(event) {
@@ -31,6 +74,5 @@ function toggleProgramList(event) {
 	}
 
 	let list = target.parentElement.querySelector('.program__list');
-
 	wrap.style.height = list.offsetHeight + 'px';
 }

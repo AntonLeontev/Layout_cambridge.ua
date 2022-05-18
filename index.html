@@ -13,6 +13,8 @@
 	<link rel="preload" as="font" href="fonts/IBMPlexSerif-SemiBold.woff" crossorigin>
 
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
 	<div class="app-wrap">
@@ -322,44 +324,67 @@
 			</article>
 			<article class="lessons">
 				<div class="content-wrapper">
-					<div class="lessons__text">
-						<h2 class="lessons__heading">Как проходят занятия в нашей школе английского языка?</h2>
-						<ul class="lessons__list">
-							<li class="lessons__item">
-								<p class="lessons__number">1</p>
-								<p class="lessons__item-text">В группе 8 или 10 студентов</p>
-							</li>
-							<li class="lessons__item">
-								<p class="lessons__number">2</p>
-								<p class="lessons__item-text">Только на английском</p>
-							</li>
-							<li class="lessons__item">
-								<p class="lessons__number">3</p>
-								<p class="lessons__item-text">Занятия 90, 135 или 180 мин</p>
-							</li>
-							<li class="lessons__item">
-								<p class="lessons__number">4</p>
-								<p class="lessons__item-text">График 2–3 раза в неделю</p>
-							</li>
-							<li class="lessons__item">
-								<p class="lessons__number">5</p>
-								<p class="lessons__item-text">Украинские преподаватели и носители языка</p>
-							</li>
-							<li class="lessons__item">
-								<p class="lessons__number">6</p>
-								<p class="lessons__item-text">Онлайн через Zoom и офлайн в нашем центре</p>
-							</li>
-							<li class="lessons__item">
-								<p class="lessons__number">7</p>
-								<p class="lessons__item-text">Программы адаптированы под возраст и цели студентов</p>
-							</li>
-							<li class="lessons__item">
-								<p class="lessons__number">8</p>
-								<p class="lessons__item-text">По проверенным учебникам и авторским материалам</p>
-							</li>
-						</ul>
+					<div class="lessons__inner">
+						<div class="lessons__text">
+							<h2 class="lessons__heading">Как проходят занятия в нашей школе английского языка?</h2>
+							<ul class="lessons__list">
+								<li class="lessons__item">
+									<p class="lessons__number"><span>1</span></p>
+									<p class="lessons__item-text">В группе 8 или 10 студентов</p>
+								</li>
+								<li class="lessons__item">
+									<p class="lessons__number"><span>2</span></p>
+									<p class="lessons__item-text">Только на английском</p>
+								</li>
+								<li class="lessons__item">
+									<p class="lessons__number"><span>3</span></p>
+									<p class="lessons__item-text">Занятия 90, 135 или 180 мин</p>
+								</li>
+								<li class="lessons__item">
+									<p class="lessons__number"><span>4</span></p>
+									<p class="lessons__item-text">График 2–3 раза в неделю</p>
+								</li>
+								<li class="lessons__item">
+									<p class="lessons__number"><span>5</span></p>
+									<p class="lessons__item-text">Украинские преподаватели и носители языка</p>
+								</li>
+								<li class="lessons__item">
+									<p class="lessons__number"><span>6</span></p>
+									<p class="lessons__item-text">Онлайн через Zoom и офлайн в нашем центре</p>
+								</li>
+								<li class="lessons__item">
+									<p class="lessons__number"><span>7</span></p>
+									<p class="lessons__item-text">Программы адаптированы под возраст и цели студентов</p>
+								</li>
+								<li class="lessons__item">
+									<p class="lessons__number"><span>8</span></p>
+									<p class="lessons__item-text">По проверенным учебникам и авторским материалам</p>
+								</li>
+							</ul>
+						</div>
+						<div class="lessons__slider">
+							<div class="image-slider">
+								<img src="images/main-slider/main_slider1.jpg" alt="">
+								<img src="images/main-slider/main_slider2.jpg" alt="">
+								<img src="images/main-slider/main_slider3.jpg" alt="">
+								<img src="images/main-slider/main_slider4.jpg" alt="">
+								<img src="images/main-slider/main_slider5.jpg" alt="">
+								<img src="images/main-slider/main_slider6.jpg" alt="">
+								<img src="images/main-slider/main_slider7.jpg" alt="">
+							</div>
+							<div class="nav-slider">
+								<div class="nav-slider__item"><img src="images/main-slider/main_slider1.jpg" alt=""></div>
+								<div class="nav-slider__item"><img src="images/main-slider/main_slider2.jpg" alt=""></div>
+								<div class="nav-slider__item"><img src="images/main-slider/main_slider3.jpg" alt=""></div>
+								<div class="nav-slider__item"><img src="images/main-slider/main_slider4.jpg" alt=""></div>
+								<div class="nav-slider__item"><img src="images/main-slider/main_slider5.jpg" alt=""></div>
+								<div class="nav-slider__item"><img src="images/main-slider/main_slider6.jpg" alt=""></div>
+								<div class="nav-slider__item"><img src="images/main-slider/main_slider7.jpg" alt=""></div>
+
+							</div>
+							
+						</div>
 					</div>
-					<div class="lessons__slider"></div>
 				</div>
 			</article>
 			<article class="teachers">
@@ -785,6 +810,8 @@
 
 	</div>
 
+	<script src="https://code.jquery.com/jquery-3.4.0.slim.min.js" integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script src="js/script.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>

@@ -241,7 +241,9 @@ h2 {
     position: relative;	
 }
 
-.studying-programs {}
+.studying-programs {
+	margin-bottom: 50px;
+}
 .studying-programs__inner {
 	display: flex;
 	margin-top: 80px;
@@ -352,8 +354,100 @@ h2 {
 	background: #fff;
 }
 
+.lessons {}
+.lessons__inner {
+	display: flex;
+}
+.lessons__text {
+	flex-basis: 50%;
+	margin-right: 10%;
+}
+.lessons__heading {
+	margin-bottom: 50px;
+}
+.lessons__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.lessons__item {
+	width: 45%;
+	margin-bottom: 60px;
+}
+.lessons__number {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	margin-bottom: 20px;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: linear-gradient(0deg,#dfeafd,#fbebef);;
+}
+.lessons__number:after {
+	content: "";
+	width: calc(100% - 16px);
+	height: calc(100% - 16px);
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	background-color: hsla(0,0%,100%,.5);
+	border-radius: 50%;
+	z-index: 1;
+}
 
+.lessons__number span {
+	z-index: 2;
+}
+.lessons__item-text {
+	font-size: 20px;
+}
+.lessons__slider {
+	width: 40%;
+}
+.image-slider {
+	margin-bottom: 40px;
+}
+.image-slider img{
+	cursor: grab;
+}
+.image-slider img:active {
+	cursor: grabbing;
+}
+.image-slider img {
+	max-width: 100%;
+}
+.nav-slider {
+}
+.nav-slider__item{
+	cursor: pointer;
+	width: 64px;
+	/*padding-left: 5px;*/
+}
+.nav-slider__item + .nav-slider__item {
+	/*padding-left: 15px;*/
 
+}
+.nav-slider__item img{
+	max-width: 100%;
+}
+.nav-slider .slick-track {
+	margin: 0 -15px;
+}
+
+.nav-slider .slick-slide {
+	margin-left: 15px;
+}
+
+.nav-slider .slick-current {
+	outline: 2px solid #8b3d70;
+}
+
+.nav-slider .slick-list {
+	overflow: visible;
+}
 
 
 
