@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Курсы английского языка в Киеве. Лицензия от Cambridge</title>
+
+	<link rel="preload" as="font" href="fonts/Formular-Bold.woff" crossorigin>
+	<link rel="preload" as="font" href="fonts/Formular-Medium.woff" crossorigin>
+	<link rel="preload" as="font" href="fonts/Formular.woff" crossorigin>
+	<link rel="preload" as="font" href="fonts/IBMPlexSerif-Light.woff" crossorigin>
+	<link rel="preload" as="font" href="fonts/IBMPlexSerif-Medium.woff" crossorigin>
+	<link rel="preload" as="font" href="fonts/IBMPlexSerif-SemiBold.woff" crossorigin>
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="app-wrap">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<img src="images/header_logo.svg" alt="Логотип">
+					<span class="header__name">Первый Кембриджский образовательный центр</span>
+				</div>
+				<div class="header__buttons">
+					<button class="button__courses gradient-button">
+						<span>Все курсы</span>
+						<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.72756 0L4.375 3.11049L1.02155 0L0 0.946484L4.375 5L8.75 0.946484L7.72756 0Z" fill="white"/></svg>
+					</button>
+					<button class="button__menu">
+						<span>Меню</span>
+						<svg fill="none" height="9" viewBox="0 0 12 9" width="12" xmlns="http://www.w3.org/2000/svg"><g class="menu__icon" fill="#131313"><path d="m0 0h12v1h-12z"/><path d="m0 4h12v1h-12z"/><path d="m0 8h12v1h-12z"/></g></svg>
+					</button>
+				</div>
+				<a href="#" class="header__link">
+					<span>Проверить свой уровень</span>
+					<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.26106 1.01865H0.86947V0H8V7.13053H6.98135V1.73894L0.720292 8L0 7.27971L6.26106 1.01865Z" fill="#131313"/></svg>
+				</a>
+				<address class="contacts">
+					<div class="address"><span class="metro">м. Золотые ворота </span>ул. Ярославов Вал, 13/2-б</div>
+					<div class="phone">
+						<ul class="phone-list">
+							<li class="phone-number">
+								(044) 580 33 00
+								<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.72756 0L4.375 3.11049L1.02155 0L0 0.946484L4.375 5L8.75 0.946484L7.72756 0Z" fill="#000000"/></svg>
+							</li>
+							<li class="phone-number">(095) 580 33 00</li>
+							<li class="phone-number">(063) 580 33 00</li>
+							<li class="phone-number">(098) 580 33 00</li>
+						</ul>
+					</div>
+				</address>
+				<div class="language">
+					<ul class="language__list">
+						<li class="language__item">RU
+						<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.72756 0L4.375 3.11049L1.02155 0L0 0.946484L4.375 5L8.75 0.946484L7.72756 0Z" fill="#000000"/></svg></li>
+						<li class="language__item">UK</li>
+					</ul>
+				</div>
+				
+
+			</div>
+
+			<div class="menu header__courses" hidden>
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#" class="menu__link">
+					<svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>
+					Английский для взрослых</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>
+					Английский для детей</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>Подготовка к CPE, CAE, FCE</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>Английский индивидуально</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>Корпоративный английский</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>Английский для работы</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>Английский для подростков</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>Подготовка к IELTS, TOEFL</a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>Клубы, игры, библиотека</a></li>
+				</ul>
+			</div>
+
+			<nav class="menu header__menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#" class="menu__link">Учебные програмы</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Экзамены Cambridge English</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Вакансии</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Преподаватели</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Почему мы</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Скидки на обучение</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="cover"></div>
+		<main class="main">
+			<article class="front-page">
+				<section class="front-page__wrapper content-wrapper">		
+					<div class="front-page__text">
+						<h1 class="front-page__title">Курсы английского в Киеве Cambridge Assessment English</h1>
+						<p class="front-page__subtitle subtitle">
+							Официальный подготовительный центр <button class="subtitle__button"><strong>(UAPC0121)</strong></button> при <a href="#" class="subtitle__link"><strong>Grade Education Centre</strong></a>
+						</p>
+						<div class="front-page__form">
+							<div class="front-page__select select">
+								<div class="select__window">Английский для взрослых</div>
+								<ul class="select__option-list select__option-list_hidden">
+									<li class="select__option select__option_selected">Английский для взрослых</li>
+									<li class="select__option">Английский для детей</li>
+									<li class="select__option">Английский для подростков</li>
+								</ul>
+							</div>
+							<button class="front-page__button gradient-button"><span>Подобрать группу</span></button>
+						</div>
+					</div>
+					<div class="front-page__image">
+						<picture>
+							<source srcset='images/front-page-image.webp'>
+							<img src="images/front-page-image.png">	
+						</picture>
+					</div>					
+				</section>
+				<section class="stats front-page__stats">
+					<ul class="stats__list">
+						<li class="stats__item">
+							<div class="stats__title">4000+</div>
+							<div class="stats__text">студентов за учебный год</div>
+						</li>
+						<li class="stats__item">
+							<div class="stats__title">70+</div>
+							<div class="stats__text">сертифицированных преподавателей</div>
+						</li>
+						<li class="stats__item">
+							<div class="stats__title">13 лет</div>
+							<div class="stats__text">обучаем английскому</div>
+						</li>
+						<li class="stats__item">
+							<div class="stats__title">Лицензия</div>
+							<div class="stats__text">от Кембриджского университета</div>
+						</li>
+					</ul>
+				</section>
+				<section class="licence licence_hidden">
+					<div class="licence__cover">
+						<button class="licence__close">
+							<svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#131313" d="M17.969 18.386L.999 1.416 2.412.002l16.97 16.97z"></path> <path fill="#131313" d="M19.387 1.414L2.416 18.384l-1.414-1.413L17.972 0z"></path></svg>
+						</button>
+						<div class="licence__image">
+							<picture>
+								<source srcset="images/licence.webp">
+								<img src="images/licence.jpg" alt="Лицензия">
+							</picture>							
+						</div>
+					</div>
+				</section>
+			</article>
+			<article class="studying-programs">
+				<div class="content-wrap">
+					<div class="studying-programs__inner">
+						<div class="studying-programs__left">
+							<div class="sticky">
+								<h2 class="studying-programs__heading">Наши программы обучения английскому</h2>
+								<picture>
+									<source srcset="images/programs-1100.webp">
+									<img src="images/programs-1100.png" alt="Программы обучения">
+								</picture>
+							</div>
+						</div>
+						<div class="studying-programs__right">
+							<ul class="studying-programs__list">
+								<li class="studying-programs__item program">
+									<div class="program__heading">
+										<p>Английский для взрослых</p>
+										<span>+</span>
+									</div>
+									<div class="program-wrap">
+										<ul class="program__list">
+											<li class="program__item">
+												<a href="#" class="program__link">
+													<span class="program__text">Летний интенсивный курс английского</span>
+													<span class="status status-green">Идет набор</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Летний экспресс-курс</span>
+													<span class="status status-green">Идет набор</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Разговорный английский</span>
+													<span class="status status-green">Идет набор</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Практический английский</span>
+													<span class="status status-green">Идет набор</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Общий курс изучения английского языка</span>
+													<span class="status status-orange">осень 2022</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Лексика и грамматика</span>
+													<span class="status status-orange">осень 2022</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Английский без домашки</span>
+													<span class="status status-orange">осень 2022</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="studying-programs__item program">
+									<div class="program__heading">
+										<p>Английский для детей</p>
+										<span>+</span>
+									</div>
+									<div class="program-wrap">
+										<ul class="program__list">
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Летний экспресс-курс английского для детей 10–12 лет</span>
+													<span class="status status-green">Идет набор</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Английский для детей 6–10 лет</span>
+													<span class="status status-orange">осень 2022</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Английский для младших подростков 11–12 лет</span>
+													<span class="status status-orange">осень 2022</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Английский для детей с дислексией и дисграфией</span>
+													<span class="status status-orange">осень 2022</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="studying-programs__item program">
+									<div class="program__heading">
+										<p>Английский для подростков</p>
+										<span>+</span>
+									</div>
+									<div class="program-wrap">
+										<ul class="program__list">
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Летний экспресс-курс английского</span>
+													<span class="status status-green">Идет набор</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Летний разговорный курс английского</span>
+													<span class="status status-green">Идет набор</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Изучение уровня и подготовка к экзаменам Cambridge English</span>
+													<span class="status status-orange">осень 2022</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Курс подготовки к ЗНО по английскому</span>
+													<span class="status status-orange">осень 2022</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="studying-programs__item program">
+									<div class="program__heading">
+										<p>Английский для работы</p>
+										<span>+</span>
+									</div>
+									<div class="program-wrap">
+										<ul class="program__list">
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Бизнес английский</span>
+													<span class="status  status-green">Идет набор</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Юридический английский</span>
+													<span class="status status-green">Идет набор</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="studying-programs__item program">
+									<div class="program__heading">
+										<p>Подготовка к экзаменам по английскому</p>
+										<span>+</span>
+									</div>
+									<div class="program-wrap">
+										<ul class="program__list">
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Подготовка к экзаменам Cambridge English</span>
+													<span class="status  status-green">Идет набор</span>
+												</a>
+											</li>
+											<li class="program__item"><a href="#" class="program__link">
+													<span class="program__text">Подготовка к экзаменам IELTS и TOEFL</span>
+													<span class="status status-green">Идет набор</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="lessons">
+				<div class="content-wrapper">
+					<div class="lessons__text">
+						<h2 class="lessons__heading">Как проходят занятия в нашей школе английского языка?</h2>
+						<ul class="lessons__list">
+							<li class="lessons__item">
+								<p class="lessons__number">1</p>
+								<p class="lessons__item-text">В группе 8 или 10 студентов</p>
+							</li>
+							<li class="lessons__item">
+								<p class="lessons__number">2</p>
+								<p class="lessons__item-text">Только на английском</p>
+							</li>
+							<li class="lessons__item">
+								<p class="lessons__number">3</p>
+								<p class="lessons__item-text">Занятия 90, 135 или 180 мин</p>
+							</li>
+							<li class="lessons__item">
+								<p class="lessons__number">4</p>
+								<p class="lessons__item-text">График 2–3 раза в неделю</p>
+							</li>
+							<li class="lessons__item">
+								<p class="lessons__number">5</p>
+								<p class="lessons__item-text">Украинские преподаватели и носители языка</p>
+							</li>
+							<li class="lessons__item">
+								<p class="lessons__number">6</p>
+								<p class="lessons__item-text">Онлайн через Zoom и офлайн в нашем центре</p>
+							</li>
+							<li class="lessons__item">
+								<p class="lessons__number">7</p>
+								<p class="lessons__item-text">Программы адаптированы под возраст и цели студентов</p>
+							</li>
+							<li class="lessons__item">
+								<p class="lessons__number">8</p>
+								<p class="lessons__item-text">По проверенным учебникам и авторским материалам</p>
+							</li>
+						</ul>
+					</div>
+					<div class="lessons__slider"></div>
+				</div>
+			</article>
+			<article class="teachers">
+				<div class="teachers__wrap">
+					<div class="teachers__heading">Наши преподаватели</div>
+					<ul class="teachers__grid grid">
+						<li class="grid__item grid-text">
+							<h3 class="grid-text__heading">Professional</h3>
+							<p class="grid-text__text">постоянно совершенствуют свои навыки</p>
+						</li>
+						<li class="grid__item grid-text">
+							<h3 class="grid-text__heading">Unique</h3>
+							<p class="grid-text__text">проходят строгий отбор и регулярный мониторинг</p>
+						</li>
+						<li class="grid__item grid__item-wide grid__item-high"></li>
+						<li class="grid__item grid__item-high"></li>
+						<li class="grid__item grid-text grid__item-high">
+							<h3 class="grid-text__heading">Experienced</h3>
+							<p class="grid-text__text">с опытом преподавания от 3 лет</p>
+						</li>
+						<li class="grid__item grid-text grid__item-high">
+							<h3 class="grid-text__heading">Qualified</h3>
+							<p class="grid-text__text">имеют международные преподавательские квалификации: CELTA, Delta CELT-P, CELT-S, IHCYLT, TYLEC, TKT</p>
+						</li>
+						<li class="grid__item grid-text grid__item-high">
+							<h3 class="grid-text__heading">Multi-taskers</h3>
+							<p class="grid-text__text">ведут разные программы и возрастные группы</p>
+						</li>
+						<li class="grid__item grid-text">
+							<h3 class="grid-text__heading">Equipped</h3>
+							<p class="grid-text__text">владеют всеми лучшими методиками</p>
+						</li>
+						<li class="grid__item grid-text">
+							<h3 class="grid-text__heading">Universal</h3>
+							<p class="grid-text__text">работают онлайн и офлайн</p>
+						</li>
+						<li class="grid__item  grid__item-wide"></li>
+					</ul>
+				</div>
+			</article>
+			<article class="enrollment">
+				<div class="content-wrap">
+					<h2 class="enrollment__heading">Как записаться на курсы английского языка?</h2>
+					<p class="enrollment__text">Перед записью в группу мы обязательно проверяем ваш текущий уровень английского. Тестирование происходит в 2 этапа: сначала вы выполняете тест, а после — проходите индивидуальную проверку Speaking & Writing. Это можно сделать как онлайн, так и в школе.</p>
+					<ul class="enrollment__list">
+						<li class="enrollment__item item">
+							<p class="item__num">1</p>
+							<p class="item__text"><a href="#" class="enrollment__link">Лексико-грамматический тест</a></p>
+						</li>
+						<li class="enrollment__item item">
+							<p class="item__num">2</p>
+							<p class="item__text">Проверка Speaking & Writing</p>
+						</li>
+						<li class="enrollment__item item">
+							<p class="item__num">3</p>
+							<p class="item__text">Выбираем программу обучения</p>
+						</li>
+						<li class="enrollment__item item">
+							<p class="item__num">4</p>
+							<p class="item__text">Подбираем расписание и группу</p>
+						</li>
+						<li class="enrollment__item item">
+							<p class="item__num">5</p>
+							<p class="item__text">Вы начинаете обучение!</p>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<article class="start">
+				<div class="content-wrap">
+					<div class="start__column">
+						<h2 class="start__heading">Готовы начать обучение?</h2>
+						<p class="start__subheading">Оставьте заявку, и мы вам перезвоним!</p>
+						<picture>
+							<source srcset="">
+							<img src="" alt="">
+						</picture>
+					</div>
+					<div class="start__column">
+						<form action="#" class="start__form">
+							<h3 class="form__heading"></h3>
+							<label for="name">Ваше имя</label>
+							<input name="name" type="text">
+							<label for="email">Ваш email</label>
+							<input name="email" type="email">
+							<label for="phone">Ваш телефон</label>
+							<input name="phone" type="phone" value="+380">
+							<select name="course">
+								<option disabled="">Учебный курс</option>
+								<option value="">Английский для взрослых</option>
+								<option value="">Английский для подростков</option>
+								<option value="">Английский для детей</option>
+								<option value="">Английский индивидуально</option>
+								<option value="">Корпоративный английский</option>
+							</select>
+							<label for="comment">Комментарий
+							</label>
+							<input name="comment" type="text">
+							<input type="checkbox" name="studied">
+							<label for="studied">Я уже у вас учился/училась</label>
+							<input type="checkbox" name="personal-data">
+							<label for="personal-data">Согласие на обработку персональных данных</label>
+							<input class="gradient-button" type="submit" value="Отправить">
+						</form>
+					</div>
+				</div>
+			</article>
+			<article class="benefits">
+				<div class="content__wrap">
+					<div class="benefits__inner">
+						<div class="benefits__column benefits__column-sticky">
+							<h2 class="benefits__heading">Преимущества учить английский язык у нас</h2>
+							<picture>
+								<source>
+								<img src="" alt="">
+							</picture>
+						</div>
+						<div class="benefits__column">
+							<ul class="benefits__list">
+								<li class="benefits__item">
+									<h4>Сертифицированные и опытные преподаватели</h4>
+									<p>у нас работают только преподаватели с международными квалификациями и опытом работы от 3 лет</p>
+								</li>
+								<li class="benefits__item">
+									<h4>Контроль прогресса обучения </h4>
+									<p>тесты контроля знаний после каждого модуля (Progress Assessment Tests) + фидбеки родителям в детских и подростковых группах</p>
+								</li>
+								<li class="benefits__item">
+									<h4>Большой выбор программ обучения</h4>
+									<p>в зависимости от цели обучения вы можете выбрать из более чем 25 программ: общий и разговорный английский, подготовка к языковым экзаменам, курсы бизнес и юридического английского и т. д.</p>
+								</li>
+								<li class="benefits__item">
+									<h4>Только эффективные методики преподавания</h4>
+									<p>наши преподаватели используют много методик, среди которых: communicative approach, lexical approach, audio-lingual method, direct method, test-teach-test, task-based learning, content and language integrated learning (CLIL)</p>
+								</li>
+								<li class="benefits__item">
+									<h4>Правильно рассчитанная и продуманная система обучения</h4>
+									<p>вы будете четко знать сколько времени вам понадобится для достижения конкретных целей</p>
+								</li>
+								<li class="benefits__item">
+									<h4>Онлайн-кабинет группы </h4>
+									<p>ваша группа будет подключена к Google classroom, где будет запись классной и домашней работы + материалы к курсу, тесты и задания </p>
+								</li>
+								<li class="benefits__item">
+									<h4>Бесплатные клубы по выходным </h4>
+									<p>по субботам и воскресеньям вы можете бесплатно посещать наши разговорные грамматические клубы</p>
+								</li>
+								<li class="benefits__item">
+									<h4>Бесплатная библиотека для студентов </h4>
+									<p>для наших студентов доступна библиотека художественной и адаптированной литературы</p>
+								</li>
+								<li class="benefits__item">
+									<h4>Отработка пропущенных занятий </h4>
+									<p>в случае пропуска 3 и более занятий мы организуем для вас бесплатную индивидуальную отработку с преподавателем </p>
+								</li>
+								<li class="benefits__item">
+									<h4>Кембриджский сертификат подтверждения уровня</h4>
+									<p>наши студенты могут сдать экзамены Cambridge Assessment English непосредственно у нас в центре, и как результат — получают международный сертификат для учебы или работы за рубежом</p>
+								</li>
+								<li class="benefits__item">
+									<h4>Рассылка полезных материалов </h4>
+									<p>мы делаем регулярную рассылку полезных материалов нашим студентам и ведем свой блог по изучению английского языка </p>
+								</li>
+								<li class="benefits__item">
+									<h4>Поэтапная оплата по модулям </h4>
+									<p>у вас есть возможность оплачивать обучение по модулям или оплатить весь курс сразу со скидкой 10%</p>
+								</li>
+								<li class="benefits__item">
+									<h4>Поддержка административного офиса </h4>
+									<p>наши администраторы всегда с радостью помогут решить любой организационный вопрос</p>
+								</li>
+								<li class="benefits__item">
+									<h4>Удобный формат обучения </h4>
+									<p>вы можете выбрать офлайн обучение в нашем центре в 5 мин от Золотых Ворот (Киев, ул. Ярославов Вал, 13/2-б) или онлайн обучение через платформу Zoom</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="levels">
+				<div class="content-wrap">
+					<div class="levels__inner">
+						<div class="levels__header">
+							<div>
+								<h1>Уровни английского языка</h1>
+								<a href="#">Скачать в PDF</a>
+							</div>
+							<p> В своей работе мы ориентируемся на международные стандарты и при распределении уровней используем CEFR (Common European Framework of References): </p>
+						</div>
+						<div class="levels__image">
+							<picture>
+								<source>
+								<img src="" alt="Схема уровней английского языка">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</article>
+			<section class="test">
+				<div class="content-wrap">
+					<test__inner>
+						<h2>Бесплатный онлайн-тест по английскому</h2>
+						<p>Пройдите наше лексико-грамматическое онлайн-тестирование и узнайте, какие программы могут подойти именно вам:</p>
+						<a href="#" class="gradient-button"><span>Пройти тест</span></a>
+					</test__inner>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="content-wrap">
+					<div class="reviews__inner">
+						<h2 class="reviews__heading">Отзывы</h2>
+						<div class="reviews__wrap">
+							<div class="reviews__section">
+								<div class="section__column">
+									<div class="review">
+										<div class="review__header">
+											<h4>Anastasiya Onoshchenko</h4>
+											<span> 19.10.2021 </span>
+										</div>
+										<p class="review__text">I want to share my joy and happiness. I’ve received the results of CAE exam. And also I want to thank you for the whole course again and especially for all the tips you gave us. I really appreciate the way in which you explained every single task. It was extremely helpful for me during my exam. Before you course I was afraid of any kind of writing. And during the exam I was sure what to write and how to do that. I still understand that I have a lot to do, to learn and to brush up (talking about my speaking). Thank you thousand times. Hope to join another your course in future.</p>
+									</div>
+									<div class="review">
+										<div class="review__header">
+											<h4>Наталія Ігнат</h4>
+											<span> 25.02.2021 </span>
+										</div>
+										<p class="review__text">Професійно, сучасно, якісно. Рекомендую. Курс бізнес англіської перевершив усі сподівання.</p>
+									</div>
+									<div class="review">
+										<div class="review__header">
+											<h4>Valery</h4>
+											<span> 01.02.2021 </span>
+										</div>
+										<p class="review__text">Anna was my teacher on the course B2.1 upper intermediate. I liked her manner of teaching! I saw how she liked it and I think it is The most important thing! To love what you are doing! Also, I attend a lot of speaking and grammar clubs with different teachers. But her classes were and are the best!!!! She is so organized and helpful!</p>
+									</div>
+									
+								</div>
+								<div class="section__column">
+									<div class="review">
+										<div class="review__header">
+											<h4>Тарас</h4>
+											<span> 20.03.2021 </span>
+										</div>
+										<p class="review__text">Мар’яна чудовий викладач, завжди готова допомогти та дати пораду. Заняття завжди проходили інформативно, матеріал викладався логічно та відповідно до вимог екзамену. З досвіду можу добавити, що без курсів підготовки саме по структурі екзамену, здати IELTS вкрай важко. Мар’яна впоралася з цим завданням на 100%. Рекомендую.</p>
+									</div>								
+									<div class="review">
+										<div class="review__header">
+											<h4>Maryna Kuzmych</h4>
+											<span> 08.09.2020 </span>
+										</div>
+										<p class="review__text">Last week I completed intensive study course in English Studies at B1+.1 Level. I was taught by Olexander only 5 lessons (and also Speaking and Grammar Clubs on weekends) and I highly recommend both his professional and friendly supportive manner in delivering the subject matter. The exercises that Olexander prepared and presented were always interesting, challenging and thought-provoking and enabled me to learn at my own pace. The exercises covered English grammar, sentence structuring, present past and future tenses and the 4 basic types of Conditionals. As well as being an excellent Tutor, Oleksandr is always available and open to discuss course content and the answers to complicated concepts either face to face or by email. Thanks to Olexander, my understanding of the English language has grown immensely and instilled in me a confidence to use the language in both my professional and social life. 
+										Oleksandr, thank you! I’m looking forward to your new lessons… </p>
+									</div>
+								</div>
+								
+							</div>
+							<button>Показать больше отзывов</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="blog-news">
+				<div class="content_wrap">
+					<div class="blog-news__inner">
+						<section class="blog">
+							<div class="blog__header">
+								<h2>Блог</h2>
+								<a href="#">Все статьи в блоге</a>
+							</div>
+							<div class="blog__articles">
+								<div class="article">
+									<div class="article__image">
+										<a href="#">
+											<div class="article__cover">
+												<span>11.05.2022</span>
+											</div>
+											<img src="" alt="">
+										</a>
+									</div>
+									<div class="article__title">
+										<a href="#">
+											<p class="author">Ольга Лаврентьева</p>
+											<p class="heading">Откуда произошли названия месяцев и дней недели на английском</p>
+										</a>
+									</div>
+								</div>
+								<div class="article">
+									<div class="article__image">
+										<a href="#">
+											<div class="article__cover">
+												<span>10.05.2022</span>
+											</div>
+											<img src="" alt="">
+										</a>
+									</div>
+									<div class="article__title">
+										<a href="#">
+											<p class="author">Катерина Пащенко</p>
+											<p class="heading">ТОП-10 лучших онлайн переводчиков</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="news">
+							<div class="news__header">
+								<h2>Новости</h2>
+								<a href="#">Все новости</a>
+							</div>
+							<ul class="news__list">
+								<li class="news__item">
+									<a href="#">
+										<div class="news__image"></div>
+										<div class="news__text">
+											<span>12.05.2022</span>
+											<p>Practice…Practice…Practice! Полезный марафон в Telegram</p>
+										</div>
+									</a>
+								</li>
+								<li class="news__item">
+									<a href="#">
+										<div class="news__image"></div>
+										<div class="news__text">
+											<span>9.05.2022</span>
+											<p>Бесплатная практика разговорного английского с иностранными волонтерами</p>
+										</div>
+									</a>
+								</li>
+								<li class="news__item">
+									<a href="#">
+										<div class="news__image"></div>
+										<div class="news__text">
+											<span>4.05.2022</span>
+											<p>Встретим победу с уверенным английским: перечень летних курсов</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+			<section class="subscribe">
+				<div class="content-wrap">
+					<div class="subscribe__inner">
+						<h2>Подписка на рассылку</h2>
+						<p>Подборки слов, советы и статьи по изучению английского</p>
+						<form class="subscribe__form">
+							<input type="email" placeholder="Введите email">
+							<input type="submit" value="Подписаться">
+						</form>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="content-wrap">
+					<div class="footer__inner">
+						<div class="footer__info">
+							<div class="contacts">
+								<h5>Контакты</h5>
+								<address>Киев, 01054, Украина, ул. Ярославов Вал, 13/2-Б, 1 этаж, офис 39. Ближайшая станция метро — Золотые Ворота</address>
+								<div class="social-media">
+									<a href="#"></a>
+									<a href="#"></a>
+									<a href="#"></a>
+									<a href="#"></a>
+								</div>
+								<div class="telegram">
+									<div class="telegram__name">
+										@CambridgeUA
+									</div>
+									<div class="telegram__link">
+										<a href="#">Наш Telegram канал</a>
+									</div>
+								</div>
+							</div>
+							<div class="user">
+								<h5>Пользователю</h5>
+								<ul>
+									<li><a href="#">Карта сайта</a></li>
+									<li><a href="#">Правила центра</a></li>
+									<li><a href="#">Договор обучения</a></li>
+								</ul>
+							</div>
+							<div class="school">
+								<h5>Наша школа</h5>
+								<ul>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Экзамены Cambridge English</a></li>
+									<li><a href="#">Учебные программы</a></li>
+									<li><a href="#">Преподаватели</a></li>
+									<li><a href="#">Почему мы</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+							<div class="courses">
+								<h5>Курсы английского языка</h5>
+								<ul>
+									<li><a href="#">Английский для взрослых</a></li>
+									<li><a href="#">Английский для подростков</a></li>
+									<li><a href="#">Английский для детей</a></li>
+									<li><a href="#">Английский индивидуально</a></li>
+									<li><a href="#">Подготовка к FCE, CAE, CPE</a></li>
+									<li><a href="#">Английский для работы</a></li>
+									<li><a href="#">Подготовка к IELTS, TOEFL</a></li>
+									<li><a href="#">Корпоративный английский</a></li>
+									<li><a href="#">Клубы, игры, библиотека</a></li>
+								</ul>
+							</div>
+						</div>
+						<hr>
+						<div class="copyright">© 2009–2022 Официальный подготовительный центр University of Cambridge English Examinations в Украине, лицензия UAPC0121</div>
+					</div>
+				</div>
+			</footer>		
+
+			
+		</main>
+
+
+
+	</div>
+
+	<script src="js/script.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
