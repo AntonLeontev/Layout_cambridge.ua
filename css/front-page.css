@@ -11,7 +11,7 @@ h2 {
     max-width: 1920px;
     min-width: 320px;
     margin: 0 auto;
-    padding: 0 120px;
+    padding: 0 220px;
 }
 @media(max-width: 1500px) {
 	.content-wrap {
@@ -475,6 +475,7 @@ h2 {
 	border-radius: 8px;
 	overflow: hidden;
 	z-index: 2;
+	max-height: 300px;
 }
 
 .grid__item:nth-child(-n+2) {
@@ -484,17 +485,31 @@ h2 {
 
 .grid__item:nth-child(3) {
 	grid-area: c;
+	background-image: url("../images/teachers.webp"),
+	url("../images/teachers.jpg");
+	background-size: cover;
+	height: 250px;
+}
+
+.grid__item:nth-child(4) {
+	background-image: url("../images/teachers2.webp"),
+	url("../images/teachers2.jpg");
+	background-size: cover;
 }
 
 .grid__item:nth-child(10) {
 	grid-area: j;
+	background-image: url("../images/teachers3.webp"),
+	url("../images/teachers3.jpg");
+	background-size: cover;
 }
 
 .grid__item img {
-	max-width: 100%;
+	max-height: 100%;
 }
 .grid-text {
 	padding: 42px 30px;
+	max-height: fit-content;
 }
 .grid-text__heading {
 	font-family: "IBMPlexSerif";
@@ -508,3 +523,67 @@ h2 {
 	line-height: 150%;
 }
 
+.enrollment {
+	background-color: #92a656;
+	color: #fff;
+	padding: 80px 0 160px 0;
+}
+.enrollment__inner {
+	position: relative;
+}
+.enrollment__heading {
+	padding-bottom: 50px;
+}
+.enrollment__text {
+	padding-bottom: 50px;
+}
+.enrollment__list {
+	display: flex;
+}
+.enrollment__item {
+	position: relative;
+	padding-right: 40px;
+}
+.item__num {
+	position: relative;
+	width: 48px;
+	height: 48px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-color: #92a656;
+	font-size: 24px;
+	line-height: 125%;
+}
+.enrollment__item:nth-child(-n+4)::before {
+	content: "";
+	position: absolute;
+	top: 24px;
+	border: 1px solid #fff;
+	width: 100%;
+	
+}
+.enrollment__link {
+	color: #fff;
+	white-space: nowrap;
+	border-bottom: 1px solid #ccc;
+	transition: border-bottom .4s;
+}
+
+.enrollment__link:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.enrollment picture {
+	position: absolute;
+  	bottom: -75%;
+	right: -10%;
+}
+.enrollment img {
+	max-width: 150px;
+	
+}
