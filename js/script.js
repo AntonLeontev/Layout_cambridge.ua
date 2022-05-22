@@ -14,29 +14,27 @@ programList.addEventListener('pointerdown', toggleIcon);
 colorHeader();
 
 $(document).ready(function(){
-  $('.image-slider').slick({
+  $('.slider-image').slick({
+    adaptiveHeight: false,
+    arrows: false,
     dots: false,
     slidesToShow: 1,
-  	slidesToScroll: 1,
-  	arrows: false,
-    draggable: true,
+    slidesToScroll: 1,
+    asNavFor: '.slider-nav',
     infinite: false,
-    swipe: true,
-    swipeToSlide: true,
-    // asNavFor: 'nav-slider'
+    variableWidth: false,
+    waitForAnimate: false
   });
 
-  $('.nav-slider').slick({
+  $('.slider-nav').slick({
+    adaptiveHeight: false,
+    arrows: false,
     dots: false,
-    draggable: true,
-    infinite: false,
-    swipe: true,
-    swipeToSlide: true,
     slidesToShow: 7,
-  	slidesToScroll: 1,
- 	asNavFor: '.image-slider',
- 	// variableWidth: true,
- 	focusOnSelect: true
+    slidesToScroll: 7,
+    asNavFor: '.slider-image',
+    focusOnSelect: true,
+    infinite: false
   });
 });
 

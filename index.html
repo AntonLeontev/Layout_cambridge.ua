@@ -13,8 +13,7 @@
 	<link rel="preload" as="font" href="fonts/IBMPlexSerif-SemiBold.woff" crossorigin>
 
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 </head>
 <body>
 	<div class="app-wrap">
@@ -97,7 +96,7 @@
 		</header>
 		<div class="cover"></div>
 		<main class="main">
-			<article class="front-page">
+			<!-- <article class="front-page">
 				<section class="front-page__wrapper content-wrapper">		
 					<div class="front-page__text">
 						<h1 class="front-page__title">Курсы английского в Киеве Cambridge Assessment English</h1>
@@ -125,21 +124,21 @@
 				</section>
 				<section class="stats front-page__stats">
 					<ul class="stats__list">
-						<li class="stats__item">
-							<div class="stats__title">4000+</div>
-							<div class="stats__text">студентов за учебный год</div>
+						<li class="stats__item statistics__item">
+							<p class="stats__title">4000+</p>
+							<p class="stats__text">студентов за учебный год</p>
 						</li>
-						<li class="stats__item">
-							<div class="stats__title">70+</div>
-							<div class="stats__text">сертифицированных преподавателей</div>
+						<li class="stats__item statistics__item">
+							<p class="stats__title">70+</p>
+							<p class="stats__text">сертифицированных преподавателей</p>
 						</li>
-						<li class="stats__item">
-							<div class="stats__title">13 лет</div>
-							<div class="stats__text">обучаем английскому</div>
+						<li class="stats__item statistics__item">
+							<p class="stats__title">13 лет</p>
+							<p class="stats__text">обучаем английскому</p>
 						</li>
-						<li class="stats__item">
-							<div class="stats__title">Лицензия</div>
-							<div class="stats__text">от Кембриджского университета</div>
+						<li class="stats__item statistics__item">
+							<p class="stats__title">Лицензия</p>
+							<p class="stats__text">от Кембриджского университета</p>
 						</li>
 					</ul>
 				</section>
@@ -363,16 +362,16 @@
 							</ul>
 						</div>
 						<div class="lessons__slider">
-							<div class="image-slider">
-								<img src="images/main-slider/main_slider1.jpg" alt="">
-								<img src="images/main-slider/main_slider2.jpg" alt="">
-								<img src="images/main-slider/main_slider3.jpg" alt="">
-								<img src="images/main-slider/main_slider4.jpg" alt="">
-								<img src="images/main-slider/main_slider5.jpg" alt="">
-								<img src="images/main-slider/main_slider6.jpg" alt="">
-								<img src="images/main-slider/main_slider7.jpg" alt="">
+							<div class="slider-image">
+								<div><img src="images/main-slider/main_slider1.jpg" alt=""></div>
+								<div><img src="images/main-slider/main_slider2.jpg" alt=""></div>
+								<div><img src="images/main-slider/main_slider3.jpg" alt=""></div>
+								<div><img src="images/main-slider/main_slider4.jpg" alt=""></div>
+								<div><img src="images/main-slider/main_slider5.jpg" alt=""></div>
+								<div><img src="images/main-slider/main_slider6.jpg" alt=""></div>
+								<div><img src="images/main-slider/main_slider7.jpg" alt=""></div>
 							</div>
-							<div class="nav-slider">
+							<div class="slider-nav">
 								<div class="nav-slider__item"><img src="images/main-slider/main_slider1.jpg" alt=""></div>
 								<div class="nav-slider__item"><img src="images/main-slider/main_slider2.jpg" alt=""></div>
 								<div class="nav-slider__item"><img src="images/main-slider/main_slider3.jpg" alt=""></div>
@@ -432,7 +431,7 @@
 						</ul>
 					</div>
 				</div>
-			</article>
+			</article> -->
 			<article class="enrollment">
 				<div class="content-wrap">
 					<div class="enrollment__inner">
@@ -467,112 +466,130 @@
 					</div>
 				</div>
 			</article>
-			<article class="start">
+			<!--<article class="start">
 				<div class="content-wrap">
-					<div class="start__column">
-						<h2 class="start__heading">Готовы начать обучение?</h2>
-						<p class="start__subheading">Оставьте заявку, и мы вам перезвоним!</p>
-						<picture>
-							<source srcset="">
-							<img src="" alt="">
-						</picture>
-					</div>
-					<div class="start__column">
-						<form action="#" class="start__form">
-							<h3 class="form__heading"></h3>
-							<label for="name">Ваше имя</label>
-							<input name="name" type="text">
-							<label for="email">Ваш email</label>
-							<input name="email" type="email">
-							<label for="phone">Ваш телефон</label>
-							<input name="phone" type="phone" value="+380">
-							<select name="course">
-								<option disabled="">Учебный курс</option>
-								<option value="">Английский для взрослых</option>
-								<option value="">Английский для подростков</option>
-								<option value="">Английский для детей</option>
-								<option value="">Английский индивидуально</option>
-								<option value="">Корпоративный английский</option>
-							</select>
-							<label for="comment">Комментарий
-							</label>
-							<input name="comment" type="text">
-							<input type="checkbox" name="studied">
-							<label for="studied">Я уже у вас учился/училась</label>
-							<input type="checkbox" name="personal-data">
-							<label for="personal-data">Согласие на обработку персональных данных</label>
-							<input class="gradient-button" type="submit" value="Отправить">
-						</form>
+					<div class="start__inner">
+						<div class="start__column">
+							<h3 class="start__heading">Готовы начать обучение?</h3>
+							<p class="start__subheading">Оставьте заявку, и мы вам перезвоним!</p>
+							<picture>
+								<source srcset="images/front_page-form.webp">
+								<img src="images/front_page-form.png" alt="">
+							</picture>
+						</div>
+						<div class="start__column column-form">
+							<form action="#" class="start__form">
+								<h3 class="form__heading">Онлайн заявка</h3>
+								<label class="label-text" for="name">
+									<span>Ваше имя</span>
+									<input id="name" name="name" type="text">
+								</label>
+								<label class="label-text" for="email">
+									<span>Ваш email</span>
+									<input id="email" name="email" type="text">
+								</label>
+								<label class="label-text" for="phone">
+									<span>Ваш телефон</span>
+									<input id="phone" name="phone" type="text" value="+380">
+								</label>
+								<select name="course">
+									<option disabled>Учебный курс</option>
+									<option value="">Английский для взрослых</option>
+									<option value="">Английский для подростков</option>
+									<option value="">Английский для детей</option>
+									<option value="">Английский индивидуально</option>
+									<option value="">Корпоративный английский</option>
+								</select>
+								<input id="comment" name="comment" type="textarea" placeholder="Комментарий">
+								<div class="checkbox-wrap">								
+									<input type="checkbox" id="studied" name="studied">
+									<label class="label-checkbox" for="studied">
+										Я уже у вас учился/училась
+									</label>
+								</div>
+								<div class="checkbox-wrap">								
+									<input type="checkbox" id="personal" name="personal">
+									<label class="label-checkbox" for="personal">
+										Согласие на обработку персональных данных
+									</label>
+								</div>								
+								<button class="gradient-button form-button" type="submit"><span>Отправить</span></button>
+							</form>
+						</div>
 					</div>
 				</div>
-			</article>
+			</article> -->
 			<article class="benefits">
-				<div class="content__wrap">
+				<div class="content-wrap">
 					<div class="benefits__inner">
 						<div class="benefits__column benefits__column-sticky">
-							<h2 class="benefits__heading">Преимущества учить английский язык у нас</h2>
-							<picture>
-								<source>
-								<img src="" alt="">
-							</picture>
+							<div class="sticky">
+								<h2 class="benefits__heading">Преимущества учить английский язык у нас</h2>
+								<picture>
+									<source srcset="images/benefits-1680.webp" media="(max-width: 1680px)">
+									<source srcset="images/benefits-1680.png" media="(max-width: 1680px)">
+									<source srcset="images/benefits.webp">
+									<img src="images/benefits.png">
+								</picture>
+							</div>
 						</div>
 						<div class="benefits__column">
 							<ul class="benefits__list">
-								<li class="benefits__item">
-									<h4>Сертифицированные и опытные преподаватели</h4>
-									<p>у нас работают только преподаватели с международными квалификациями и опытом работы от 3 лет</p>
+								<li class="statistics__item benefits__item">
+									<h4 class="stats__title">Сертифицированные и опытные преподаватели</h4>
+									<p class="stats__text">у нас работают только преподаватели с международными квалификациями и опытом работы от 3 лет</p>
 								</li>
-								<li class="benefits__item">
-									<h4>Контроль прогресса обучения </h4>
-									<p>тесты контроля знаний после каждого модуля (Progress Assessment Tests) + фидбеки родителям в детских и подростковых группах</p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Контроль прогресса обучения </h4>
+									<p class="stats__text">тесты контроля знаний после каждого модуля (Progress Assessment Tests) + фидбеки родителям в детских и подростковых группах</p>
 								</li>
-								<li class="benefits__item">
-									<h4>Большой выбор программ обучения</h4>
-									<p>в зависимости от цели обучения вы можете выбрать из более чем 25 программ: общий и разговорный английский, подготовка к языковым экзаменам, курсы бизнес и юридического английского и т. д.</p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Большой выбор программ обучения</h4>
+									<p class="stats__text">в зависимости от цели обучения вы можете выбрать из более чем 25 программ: общий и разговорный английский, подготовка к языковым экзаменам, курсы бизнес и юридического английского и т. д.</p>
 								</li>
-								<li class="benefits__item">
-									<h4>Только эффективные методики преподавания</h4>
-									<p>наши преподаватели используют много методик, среди которых: communicative approach, lexical approach, audio-lingual method, direct method, test-teach-test, task-based learning, content and language integrated learning (CLIL)</p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Только эффективные методики преподавания</h4>
+									<p class="stats__text">наши преподаватели используют много методик, среди которых: communicative approach, lexical approach, audio-lingual method, direct method, test-teach-test, task-based learning, content and language integrated learning (CLIL)</p>
 								</li>
-								<li class="benefits__item">
-									<h4>Правильно рассчитанная и продуманная система обучения</h4>
-									<p>вы будете четко знать сколько времени вам понадобится для достижения конкретных целей</p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Правильно рассчитанная и продуманная система обучения</h4>
+									<p class="stats__text">вы будете четко знать сколько времени вам понадобится для достижения конкретных целей</p>
 								</li>
-								<li class="benefits__item">
-									<h4>Онлайн-кабинет группы </h4>
-									<p>ваша группа будет подключена к Google classroom, где будет запись классной и домашней работы + материалы к курсу, тесты и задания </p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Онлайн-кабинет группы </h4>
+									<p class="stats__text">ваша группа будет подключена к Google classroom, где будет запись классной и домашней работы + материалы к курсу, тесты и задания </p>
 								</li>
-								<li class="benefits__item">
-									<h4>Бесплатные клубы по выходным </h4>
-									<p>по субботам и воскресеньям вы можете бесплатно посещать наши разговорные грамматические клубы</p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Бесплатные клубы по выходным </h4>
+									<p class="stats__text">по субботам и воскресеньям вы можете бесплатно посещать наши разговорные грамматические клубы</p>
 								</li>
-								<li class="benefits__item">
-									<h4>Бесплатная библиотека для студентов </h4>
-									<p>для наших студентов доступна библиотека художественной и адаптированной литературы</p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Бесплатная библиотека для студентов </h4>
+									<p class="stats__text">для наших студентов доступна библиотека художественной и адаптированной литературы</p>
 								</li>
-								<li class="benefits__item">
-									<h4>Отработка пропущенных занятий </h4>
-									<p>в случае пропуска 3 и более занятий мы организуем для вас бесплатную индивидуальную отработку с преподавателем </p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Отработка пропущенных занятий </h4>
+									<p class="stats__text">в случае пропуска 3 и более занятий мы организуем для вас бесплатную индивидуальную отработку с преподавателем </p>
 								</li>
-								<li class="benefits__item">
-									<h4>Кембриджский сертификат подтверждения уровня</h4>
-									<p>наши студенты могут сдать экзамены Cambridge Assessment English непосредственно у нас в центре, и как результат — получают международный сертификат для учебы или работы за рубежом</p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Кембриджский сертификат подтверждения уровня</h4>
+									<p class="stats__text">наши студенты могут сдать экзамены Cambridge Assessment English непосредственно у нас в центре, и как результат — получают международный сертификат для учебы или работы за рубежом</p>
 								</li>
-								<li class="benefits__item">
-									<h4>Рассылка полезных материалов </h4>
-									<p>мы делаем регулярную рассылку полезных материалов нашим студентам и ведем свой блог по изучению английского языка </p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Рассылка полезных материалов </h4>
+									<p class="stats__text">мы делаем регулярную рассылку полезных материалов нашим студентам и ведем свой блог по изучению английского языка </p>
 								</li>
-								<li class="benefits__item">
-									<h4>Поэтапная оплата по модулям </h4>
-									<p>у вас есть возможность оплачивать обучение по модулям или оплатить весь курс сразу со скидкой 10%</p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Поэтапная оплата по модулям </h4>
+									<p class="stats__text">у вас есть возможность оплачивать обучение по модулям или оплатить весь курс сразу со скидкой 10%</p>
 								</li>
-								<li class="benefits__item">
-									<h4>Поддержка административного офиса </h4>
-									<p>наши администраторы всегда с радостью помогут решить любой организационный вопрос</p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Поддержка административного офиса </h4>
+									<p class="stats__text">наши администраторы всегда с радостью помогут решить любой организационный вопрос</p>
 								</li>
-								<li class="benefits__item">
-									<h4>Удобный формат обучения </h4>
-									<p>вы можете выбрать офлайн обучение в нашем центре в 5 мин от Золотых Ворот (Киев, ул. Ярославов Вал, 13/2-б) или онлайн обучение через платформу Zoom</p>
+								<li class="benefits__item statistics__item">
+									<h4 class="stats__title">Удобный формат обучения </h4>
+									<p class="stats__text">вы можете выбрать офлайн обучение в нашем центре в 5 мин от Золотых Ворот (Киев, ул. Ярославов Вал, 13/2-б) или онлайн обучение через платформу Zoom</p>
 								</li>
 							</ul>
 						</div>
@@ -584,7 +601,7 @@
 					<div class="levels__inner">
 						<div class="levels__header">
 							<div>
-								<h1>Уровни английского языка</h1>
+								<h2>Уровни английского языка</h2>
 								<a href="#">Скачать в PDF</a>
 							</div>
 							<p> В своей работе мы ориентируемся на международные стандарты и при распределении уровней используем CEFR (Common European Framework of References): </p>
@@ -825,7 +842,7 @@
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.4.0.slim.min.js" integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript" src="slick.min.js"></script>
 	<script src="js/script.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
