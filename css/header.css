@@ -12,8 +12,15 @@ body {
 	left: 0;
 	right: 0;
 	height: 70px;
+	display: flex;	
 	border-bottom: 1px #ccc solid;
-	z-index: 20;	
+	z-index: 20;
+	font-size: 1rem;	
+}
+@media(max-width: 1500px) {
+	.header {
+		font-size: .875rem;
+	}
 }
 
 .header_scrolled {
@@ -21,11 +28,9 @@ body {
 	border-bottom: solid 1px #fff;
 }
 
-.header__container {
-	max-width: 1920px;
+.header__inner {
 	height: 100%;
 	margin: 0 auto;
-	padding: 0 80px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -35,22 +40,21 @@ body {
 	height: 100%;
 	display: flex;
 	align-items: center;
+	margin-right: 15px;	
 }
 
 .header__name {
 	display: inline-block;
 	width: 200px;
-	font-family: Formular, sans-serif;
 	font-weight: 500;
-	font-size: 14px;
 	line-height: 140%;
 	margin-left: 20px;
 }
 
 .header__buttons {
-	font-size: 14px;
 	line-height: 150%;
 	font-weight: 400;
+	margin-right: 15px;	
 }
 
 .gradient-button {
@@ -110,10 +114,31 @@ body {
 	margin: 8px 25px;
 	transition: color .4s;
 	white-space: nowrap;
+	line-height: 150%;
+	font-size: 1rem;	
+}
+@media(max-width: 1500px) {
+	.button__menu {
+		font-size: .875rem;
+	}
+}
+@media(max-width: 1300px) {
+	.button__menu {
+		margin: 8px 15px;
+	}
+	.header__buttons {
+		margin-right: 7px;
+	}
 }
 
 .button__menu:hover {
 	color: #8b3d70;
+}
+.menu__icon {
+	transition: fill .4s;
+}
+.button__menu:hover .menu__icon {
+	fill: #8b3d70;
 }
 
 .button__menu svg {
@@ -126,10 +151,10 @@ body {
 
 .header__link {
 	white-space: nowrap;
-	font-size: 14px;
 	line-height: 150%;
 	font-weight: 400;
 	color: #000;
+	margin-right: 15px;	
 }
 
 .header__link span {
@@ -140,17 +165,19 @@ body {
 .header__link span:hover {
 	border-bottom: 1px solid #000;
 }
-
-.contacts {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.drop-down svg {
+	transition: transform .4s;
 }
-
+.drop-down:hover svg {
+	transform: rotateZ(180deg);
+}
+.address {
+	margin-right: 15px;	
+}
 .phone {
 	width: 165px;
 	height: 40px;
-	margin-left: 10px;
+	margin-right: 15px;
 	overflow: hidden;
 	border-radius: 8px;
 	cursor: default;
@@ -178,22 +205,22 @@ body {
 .phone-list::before {
 	content: url("data:image/svg+xml,%3Csvg fill='none' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m.799805 4.80078c0-2.75673 1.583245-3.73231 2.703835-3.949694.309-.059942.60731.097889.79616.349694l1.57963 2.10616c.29859.39813.259.95522-.0929 1.30711l-1.27707 1.27708c-.30436.30436-.37814.76801-.1514 1.13388.37934.61212 1.05992 1.59394 2.04174 2.57577.98183.98182 1.96366 1.66242 2.57577 2.04172.36587.2268.82953.153 1.13393-.1514l1.277-1.277c.3519-.35194.909-.39153 1.3071-.0929l2.1062 1.5796c.2518.1888.4096.4871.3497.7961-.2174 1.1206-1.193 2.7039-3.9497 2.7039-3.2 0-5.6-2.4-6.8-3.6s-3.599995-3.60002-3.599995-6.80002z' fill='%23131313'/%3E%3C/svg%3E");	position: absolute;
 	position: absolute;
-	top: 12px;
-	left: 9px;
+	top: 0.75em;
+	left: 6px;
 }
 
 .phone-number, .language__item {
-	margin-top: 12px;
+	margin-top: 0.55em;
 }
 
 .phone-number:last-child {
-	margin-bottom: 10px;
+	margin-bottom: 0.625em;
 }
 
 .phone-number svg, .language__list svg {
 	position: absolute;
-	top: 18px;
-	right: 13px;
+	top: 1.3em;
+	right: 10px;
 }
 
 .language {
@@ -211,7 +238,7 @@ body {
 .language__list {
 	background: transparent;
 	position: relative;
-	padding: 2px 10px 2px 0px;
+	padding: 2px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -227,17 +254,25 @@ body {
 	margin-bottom: 10px;
 }
 
+.burger-button {
+	display: none;
+	margin-left: auto;
+	background: transparent;	
+}
+
 .menu {
-	position: absolute;
-	top: 100%;
+	position: fixed;
+	top: -100%;
 	left: 0;
 	width: 100%;
-	max-width: 1920px;
 	padding: 50px 80px 0;	
 	background: #fff;
 	z-index: 21;
-
-	display: none;
+	transition: all .4s;
+}
+.menu_active {
+	display: block;
+	top: 70px;
 }
 
 .menu__list {
@@ -331,11 +366,18 @@ body {
 
 
 
-@media(max-width: 1500px) {
+@media(max-width: 1640px) {
 	.metro {
 		display: none;
 	}
 }
-
+@media(max-width: 1220px) {
+	.button__menu, .header__link, .address, .phone, .language{
+		display: none;
+	}
+	.burger-button {
+		display: block;
+	}
+}
 
 

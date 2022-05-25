@@ -18,28 +18,28 @@
 <body>
 	<div class="app-wrap">
 		<header class="header">
-			<div class="header__container">
-				<div class="header__logo">
-					<img src="images/header_logo.svg" alt="Логотип">
-					<span class="header__name">Первый Кембриджский образовательный центр</span>
-				</div>
-				<div class="header__buttons">
-					<button class="button__courses gradient-button">
-						<span>Все курсы</span>
-						<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.72756 0L4.375 3.11049L1.02155 0L0 0.946484L4.375 5L8.75 0.946484L7.72756 0Z" fill="white"/></svg>
-					</button>
-					<button class="button__menu">
-						<span>Меню</span>
-						<svg fill="none" height="9" viewBox="0 0 12 9" width="12" xmlns="http://www.w3.org/2000/svg"><g class="menu__icon" fill="#131313"><path d="m0 0h12v1h-12z"/><path d="m0 4h12v1h-12z"/><path d="m0 8h12v1h-12z"/></g></svg>
-					</button>
-				</div>
-				<a href="#" class="header__link">
-					<span>Проверить свой уровень</span>
-					<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.26106 1.01865H0.86947V0H8V7.13053H6.98135V1.73894L0.720292 8L0 7.27971L6.26106 1.01865Z" fill="#131313"/></svg>
-				</a>
-				<address class="contacts">
-					<div class="address"><span class="metro">м. Золотые ворота </span>ул. Ярославов Вал, 13/2-б</div>
-					<div class="phone">
+			<div class="content-wrap">
+				<div class="header__inner">
+					<div class="header__logo">
+						<img src="images/header_logo.svg" alt="Логотип">
+						<span class="header__name">Первый Кембриджский образовательный центр</span>
+					</div>
+					<div class="header__buttons">
+						<button class="button__courses gradient-button">
+							<span>Все курсы</span>
+							<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.72756 0L4.375 3.11049L1.02155 0L0 0.946484L4.375 5L8.75 0.946484L7.72756 0Z" fill="white"/></svg>
+						</button>
+						<button class="button__menu">
+							<span>Меню</span>
+							<svg fill="none" height="9" viewBox="0 0 12 9" width="12" xmlns="http://www.w3.org/2000/svg"><g class="menu__icon" fill="#131313"><path d="m0 0h12v1h-12z"/><path d="m0 4h12v1h-12z"/><path d="m0 8h12v1h-12z"/></g></svg>
+						</button>
+					</div>
+					<a href="#" class="header__link">
+						<span>Проверить свой уровень</span>
+						<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.26106 1.01865H0.86947V0H8V7.13053H6.98135V1.73894L0.720292 8L0 7.27971L6.26106 1.01865Z" fill="#131313"/></svg>
+					</a>
+					<address class="address"><span class="metro">м. Золотые ворота </span>ул. Ярославов Вал, 13/2-б</address>
+					<address class="drop-down phone">
 						<ul class="phone-list">
 							<li class="phone-number">
 								(044) 580 33 00
@@ -49,19 +49,19 @@
 							<li class="phone-number">(063) 580 33 00</li>
 							<li class="phone-number">(098) 580 33 00</li>
 						</ul>
+					</address>
+					<div class="drop-down language">
+						<ul class="language__list">
+							<li class="language__item">RU
+							<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.72756 0L4.375 3.11049L1.02155 0L0 0.946484L4.375 5L8.75 0.946484L7.72756 0Z" fill="#000000"/></svg></li>
+							<li class="language__item">UK</li>
+						</ul>
 					</div>
-				</address>
-				<div class="language">
-					<ul class="language__list">
-						<li class="language__item">RU
-						<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.72756 0L4.375 3.11049L1.02155 0L0 0.946484L4.375 5L8.75 0.946484L7.72756 0Z" fill="#000000"/></svg></li>
-						<li class="language__item">UK</li>
-					</ul>
+					<button class="burger-button">
+						<svg fill="none" height="9" viewBox="0 0 12 9" width="12" xmlns="http://www.w3.org/2000/svg"><g fill="#131313"><path d="m0 0h12v1h-12z"></path><path d="m0 4h12v1h-12z"></path><path d="m0 8h12v1h-12z"></path></g></svg>
+					</button>					
 				</div>
-				
-
 			</div>
-
 			<div class="menu header__courses" hidden>
 				<ul class="menu__list">
 					<li class="menu__item"><a href="#" class="menu__link">
@@ -76,10 +76,11 @@
 					<li class="menu__item"><a href="#" class="menu__link"><svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>Английский для подростков</a></li>
 					<li class="menu__item"><a href="#" class="menu__link"><svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>Подготовка к IELTS, TOEFL</a></li>
 					<li class="menu__item"><a href="#" class="menu__link"><svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>Клубы, игры, библиотека</a></li>
-				</ul>
+				</ul>				
 			</div>
-
-			<nav class="menu header__menu">
+		</header>		
+		<nav class="menu header__menu">
+			<div class="content-wrap">
 				<ul class="menu__list">
 					<li class="menu__item"><a href="#" class="menu__link">Учебные програмы</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
@@ -92,55 +93,59 @@
 					<li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
 				</ul>
-			</nav>
-		</header>
+			</div>
+		</nav>
 		<div class="cover"></div>
 		<main class="main">
-			<!-- <article class="front-page">
-				<section class="front-page__wrapper content-wrapper">		
-					<div class="front-page__text">
-						<h1 class="front-page__title">Курсы английского в Киеве Cambridge Assessment English</h1>
-						<p class="front-page__subtitle subtitle">
-							Официальный подготовительный центр <button class="subtitle__button"><strong>(UAPC0121)</strong></button> при <a href="#" class="subtitle__link"><strong>Grade Education Centre</strong></a>
-						</p>
-						<div class="front-page__form">
-							<div class="front-page__select select">
-								<div class="select__window">Английский для взрослых</div>
-								<ul class="select__option-list select__option-list_hidden">
-									<li class="select__option select__option_selected">Английский для взрослых</li>
-									<li class="select__option">Английский для детей</li>
-									<li class="select__option">Английский для подростков</li>
-								</ul>
+			<article class="front-page">
+				<section class="content-wrap">
+					<div class="front-page__inner">	
+						<div class="front-page__text">
+							<h1 class="front-page__title">Курсы английского в Киеве Cambridge Assessment English</h1>
+							<p class="front-page__subtitle subtitle">
+								Официальный подготовительный центр <button class="subtitle__button"><strong>(UAPC0121)</strong></button> при <a href="#" class="subtitle__link"><strong>Grade Education Centre</strong></a>
+							</p>
+							<div class="front-page__form">
+								<div class="front-page__select select">
+									<div class="select__window">Английский для взрослых</div>
+									<ul class="select__option-list select__option-list_hidden">
+										<li class="select__option select__option_selected">Английский для взрослых</li>
+										<li class="select__option">Английский для детей</li>
+										<li class="select__option">Английский для подростков</li>
+									</ul>
+								</div>
+								<button class="front-page__button gradient-button"><span>Подобрать группу</span></button>
 							</div>
-							<button class="front-page__button gradient-button"><span>Подобрать группу</span></button>
 						</div>
-					</div>
-					<div class="front-page__image">
-						<picture>
-							<source srcset='images/front-page-image.webp'>
-							<img src="images/front-page-image.png">	
-						</picture>
-					</div>					
+						<div class="front-page__image">
+							<picture>
+								<source srcset='images/front-page-image.webp'>
+								<img src="images/front-page-image.png">	
+							</picture>
+						</div>					
+					</div>		
 				</section>
 				<section class="stats front-page__stats">
-					<ul class="stats__list">
-						<li class="stats__item statistics__item">
-							<p class="stats__title">4000+</p>
-							<p class="stats__text">студентов за учебный год</p>
-						</li>
-						<li class="stats__item statistics__item">
-							<p class="stats__title">70+</p>
-							<p class="stats__text">сертифицированных преподавателей</p>
-						</li>
-						<li class="stats__item statistics__item">
-							<p class="stats__title">13 лет</p>
-							<p class="stats__text">обучаем английскому</p>
-						</li>
-						<li class="stats__item statistics__item">
-							<p class="stats__title">Лицензия</p>
-							<p class="stats__text">от Кембриджского университета</p>
-						</li>
-					</ul>
+					<div class="content-wrap">
+						<ul class="stats__list">
+							<li class="stats__item statistics__item">
+								<p class="stats__title">4000+</p>
+								<p class="stats__text">студентов за учебный год</p>
+							</li>
+							<li class="stats__item statistics__item">
+								<p class="stats__title">70+</p>
+								<p class="stats__text">сертифицированных преподавателей</p>
+							</li>
+							<li class="stats__item statistics__item">
+								<p class="stats__title">13 лет</p>
+								<p class="stats__text">обучаем английскому</p>
+							</li>
+							<li class="stats__item statistics__item">
+								<p class="stats__title">Лицензия</p>
+								<p class="stats__text">от Кембриджского университета</p>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="licence licence_hidden">
 					<div class="licence__cover">
@@ -431,7 +436,7 @@
 						</ul>
 					</div>
 				</div>
-			</article> -->
+			</article> 
 			<article class="enrollment">
 				<div class="content-wrap">
 					<div class="enrollment__inner">
@@ -466,7 +471,7 @@
 					</div>
 				</div>
 			</article>
-			<!--<article class="start">
+			<article class="start">
 				<div class="content-wrap">
 					<div class="start__inner">
 						<div class="start__column">
@@ -518,7 +523,7 @@
 						</div>
 					</div>
 				</div>
-			</article> -->
+			</article> 
 			<article class="benefits">
 				<div class="content-wrap">
 					<div class="benefits__inner">
@@ -595,34 +600,42 @@
 						</div>
 					</div>
 				</div>
-			</article>
+			</article> 
 			<article class="levels">
 				<div class="content-wrap">
 					<div class="levels__inner">
 						<div class="levels__header">
 							<div>
 								<h2>Уровни английского языка</h2>
-								<a href="#">Скачать в PDF</a>
+								<a href="#">
+									Скачать в PDF
+									<svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.710937 13.7074L10.9966 24L21.2823 13.7108L20.0738 12.4988L11.8538 20.7189L11.8538 -4.87068e-07L10.1395 -4.12136e-07L10.1395 20.7189L1.91607 12.4954L0.710937 13.7074Z" fill="#a14669"></path></svg>
+								</a>
 							</div>
 							<p> В своей работе мы ориентируемся на международные стандарты и при распределении уровней используем CEFR (Common European Framework of References): </p>
 						</div>
-						<div class="levels__image">
-							<picture>
-								<source>
-								<img src="" alt="Схема уровней английского языка">
-							</picture>
-						</div>
 					</div>
+				</div>
+				<div class="levels__image">
+					<img src="images/levels_ru.png" alt="Схема уровней английского языка">
 				</div>
 			</article>
 			<section class="test">
 				<div class="content-wrap">
-					<test__inner>
+					<div class="test__inner">
 						<h2>Бесплатный онлайн-тест по английскому</h2>
 						<p>Пройдите наше лексико-грамматическое онлайн-тестирование и узнайте, какие программы могут подойти именно вам:</p>
-						<a href="#" class="gradient-button"><span>Пройти тест</span></a>
-					</test__inner>
+						<a href="#" class="gradient-button test__button"><span>Пройти тест</span></a>
+					</div>
 				</div>
+				<picture class="test__bg-left">
+					<sourse srcset="images/test_left.webp"></sourse>
+					<img src="images/test_left.png" alt="">
+				</picture>
+				<picture class="test__bg-right">
+					<sourse srcset="images/test_right.webp"></sourse>
+					<img src="images/test_right.png" alt="">
+				</picture>
 			</section>
 			<section class="reviews">
 				<div class="content-wrap">
@@ -636,7 +649,7 @@
 											<h4>Anastasiya Onoshchenko</h4>
 											<span> 19.10.2021 </span>
 										</div>
-										<p class="review__text">I want to share my joy and happiness. I’ve received the results of CAE exam. And also I want to thank you for the whole course again and especially for all the tips you gave us. I really appreciate the way in which you explained every single task. It was extremely helpful for me during my exam. Before you course I was afraid of any kind of writing. And during the exam I was sure what to write and how to do that. I still understand that I have a lot to do, to learn and to brush up (talking about my speaking). Thank you thousand times. Hope to join another your course in future.</p>
+										<p class="review__text">I want to share my joy and happiness. I’ve received the results of CAE exam. And also I want to thank you for the whole course again and especially for all the tips you gave us. I really appreciate the way in which you explained every single task. It was extremely helpful for me during my exam. Before you course I was afraid of any kind of writing. And during the exam I was sure what to write and how to do that. I still understand that I have a lot to do, to learn and to brush up (talking about my speaking). Thank you a thousand times. Hope to join another your course in future.</p>
 									</div>
 									<div class="review">
 										<div class="review__header">
@@ -670,66 +683,64 @@
 										<p class="review__text">Last week I completed intensive study course in English Studies at B1+.1 Level. I was taught by Olexander only 5 lessons (and also Speaking and Grammar Clubs on weekends) and I highly recommend both his professional and friendly supportive manner in delivering the subject matter. The exercises that Olexander prepared and presented were always interesting, challenging and thought-provoking and enabled me to learn at my own pace. The exercises covered English grammar, sentence structuring, present past and future tenses and the 4 basic types of Conditionals. As well as being an excellent Tutor, Oleksandr is always available and open to discuss course content and the answers to complicated concepts either face to face or by email. Thanks to Olexander, my understanding of the English language has grown immensely and instilled in me a confidence to use the language in both my professional and social life. 
 										Oleksandr, thank you! I’m looking forward to your new lessons… </p>
 									</div>
-								</div>
-								
+								</div>								
 							</div>
-							<button>Показать больше отзывов</button>
+							<button>
+								<svg data-v-39212ca7="" width="44" height="42" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-39212ca7="" d="M23.32 8.376a14.26 14.26 0 018.715 6.686l1.052 1.822 1.243-4.617 2.567.691-2.422 8.992-8.961-2.322.666-2.572 4.63 1.2-1.077-1.865c-3.224-5.584-10.39-7.504-15.975-4.28-5.584 3.223-7.504 10.388-4.28 15.972 3.225 5.584 10.391 7.504 15.975 4.28l1.151-.664L27.934 34l-1.152.665a14.26 14.26 0 01-10.89 1.433 14.26 14.26 0 01-8.715-6.687 14.255 14.255 0 01-1.435-10.889A14.255 14.255 0 0112.43 9.81a14.26 14.26 0 0110.89-1.433z" fill="#A14669"></path><defs data-v-39212ca7=""></defs></svg>
+								Показать больше отзывов
+							</button>
 						</div>
 					</div>
 				</div>
 			</section>
 			<div class="blog-news">
-				<div class="content_wrap">
+				<div class="content-wrap">
 					<div class="blog-news__inner">
 						<section class="blog">
-							<div class="blog__header">
+							<div class="head blog__header">
 								<h2>Блог</h2>
 								<a href="#">Все статьи в блоге</a>
 							</div>
-							<div class="blog__articles">
-								<div class="article">
-									<div class="article__image">
-										<a href="#">
+							<ul class="blog__articles">
+								<li class="article">
+									<a href="#" class="article__link">
+										<div class="article__image" style="background: #fff url(images/weeks-800x421.png) scroll 0 0; background-size: cover;">
 											<div class="article__cover">
+												<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 7.5H2V18h16V7.5zm0-1H2V3h16v3.5zM19 3a1 1 0 00-1-1H2a1 1 0 00-1 1v15a1 1 0 001 1h16a1 1 0 001-1V3z" fill="#ffffff"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 5V0h1v5h-1zm8 0V0h1v5h-1z" fill="#ffffff"></path></svg>
 												<span>11.05.2022</span>
 											</div>
-											<img src="" alt="">
-										</a>
-									</div>
-									<div class="article__title">
-										<a href="#">
+										</div>
+										<div class="article__title">
 											<p class="author">Ольга Лаврентьева</p>
 											<p class="heading">Откуда произошли названия месяцев и дней недели на английском</p>
-										</a>
-									</div>
-								</div>
-								<div class="article">
-									<div class="article__image">
-										<a href="#">
+										</div>
+									</a>
+								</li>
+								<li class="article">
+									<a href="#" class="article__link">
+										<div class="article__image" style="background: #fff url(images/article2-800x422.jpg) scroll 100% 0; background-size: cover;">
 											<div class="article__cover">
+												<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 7.5H2V18h16V7.5zm0-1H2V3h16v3.5zM19 3a1 1 0 00-1-1H2a1 1 0 00-1 1v15a1 1 0 001 1h16a1 1 0 001-1V3z" fill="#ffffff"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 5V0h1v5h-1zm8 0V0h1v5h-1z" fill="#ffffff"></path></svg>
 												<span>10.05.2022</span>
 											</div>
-											<img src="" alt="">
-										</a>
-									</div>
-									<div class="article__title">
-										<a href="#">
+										</div>
+										<div class="article__title">
 											<p class="author">Катерина Пащенко</p>
 											<p class="heading">ТОП-10 лучших онлайн переводчиков</p>
-										</a>
-									</div>
-								</div>
-							</div>
+										</div>
+									</a>
+								</li>
+							</ul>
 						</section>
 						<section class="news">
-							<div class="news__header">
+							<div class="head news__header">
 								<h2>Новости</h2>
 								<a href="#">Все новости</a>
 							</div>
 							<ul class="news__list">
 								<li class="news__item">
 									<a href="#">
-										<div class="news__image"></div>
+										<div class="news__image" style="background: url(images/news1.jpg);"></div>
 										<div class="news__text">
 											<span>12.05.2022</span>
 											<p>Practice…Practice…Practice! Полезный марафон в Telegram</p>
@@ -738,7 +749,7 @@
 								</li>
 								<li class="news__item">
 									<a href="#">
-										<div class="news__image"></div>
+										<div class="news__image" style="background: url(images/news2.jpg);"></div>
 										<div class="news__text">
 											<span>9.05.2022</span>
 											<p>Бесплатная практика разговорного английского с иностранными волонтерами</p>
@@ -747,10 +758,10 @@
 								</li>
 								<li class="news__item">
 									<a href="#">
-										<div class="news__image"></div>
+										<div class="news__image" style="background: url(images/news3-800x420.jpg);"></div>
 										<div class="news__text">
 											<span>4.05.2022</span>
-											<p>Встретим победу с уверенным английским: перечень летних курсов</p>
+											<p>Наши страницы в социальных сетях для развития английского</p>
 										</div>
 									</a>
 								</li>
@@ -762,11 +773,15 @@
 			<section class="subscribe">
 				<div class="content-wrap">
 					<div class="subscribe__inner">
-						<h2>Подписка на рассылку</h2>
-						<p>Подборки слов, советы и статьи по изучению английского</p>
+						<div>
+							<h3 class="subscribe__heading">Подписка на рассылку</h3>
+							<p class="subscribe__text">Подборки слов, советы и статьи по изучению английского</p>
+						</div>
 						<form class="subscribe__form">
 							<input type="email" placeholder="Введите email">
-							<input type="submit" value="Подписаться">
+							<button class="gradient-button subscribe__button" type="submit">
+								<span>Подписаться</span>
+							</button>
 						</form>
 					</div>
 				</div>
@@ -775,61 +790,75 @@
 				<div class="content-wrap">
 					<div class="footer__inner">
 						<div class="footer__info">
-							<div class="contacts">
-								<h5>Контакты</h5>
+							<div class="footer-block footer__contacts">
+								<h5 class="footer-block__header">Контакты</h5>
 								<address>Киев, 01054, Украина, ул. Ярославов Вал, 13/2-Б, 1 этаж, офис 39. Ближайшая станция метро — Золотые Ворота</address>
 								<div class="social-media">
-									<a href="#"></a>
-									<a href="#"></a>
-									<a href="#"></a>
-									<a href="#"></a>
+									<a href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="social__image" d="M22.65 0H1.35C0.6 0 0 0.6 0 1.35V22.65C0 23.4 0.6 24 1.35 24H12.9V14.7H9.75V11.1H12.9V8.4C12.9 5.25 14.85 3.6 17.55 3.6C18.45 3.6 19.35 3.6 20.4 3.75V7.05H18.45C16.95 7.05 16.65 7.8 16.65 8.85V11.1H20.25L19.8 14.7H16.5V24H22.65C23.4 24 24 23.4 24 22.65V1.35C24 0.6 23.4 0 22.65 0Z" fill="white"></path></svg>
+									</a>
+									<a href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="social__image" fill-rule="evenodd" clip-rule="evenodd" d="M11.9999 2.16221C15.2041 2.16221 15.5836 2.17445 16.849 2.23218C18.019 2.28558 18.6544 2.48102 19.0772 2.64536C19.5985 2.83773 20.0699 3.14447 20.457 3.54302C20.8556 3.9301 21.1623 4.40158 21.3547 4.92279C21.519 5.34564 21.7145 5.98103 21.7678 7.15102C21.8256 8.41642 21.8378 8.79592 21.8378 12.0002C21.8378 15.2044 21.8256 15.5838 21.7678 16.8493C21.7144 18.0193 21.519 18.6546 21.3547 19.0775C21.155 19.5951 20.8493 20.0651 20.457 20.4573C20.0648 20.8496 19.5948 21.1553 19.0772 21.355C18.6544 21.5193 18.019 21.7148 16.849 21.7682C15.5839 21.8259 15.2044 21.8381 11.9999 21.8381C8.79547 21.8381 8.41611 21.8259 7.15082 21.7682C5.98084 21.7148 5.3455 21.5193 4.92261 21.355C4.4014 21.1626 3.92992 20.8559 3.54285 20.4573C3.1443 20.0702 2.83757 19.5988 2.64519 19.0775C2.48086 18.6547 2.28537 18.0193 2.23202 16.8493C2.17429 15.584 2.16205 15.2044 2.16205 12.0002C2.16205 8.79592 2.17429 8.41651 2.23202 7.15102C2.28542 5.98103 2.48086 5.34569 2.64519 4.92279C2.83759 4.40155 3.14435 3.93005 3.54295 3.54297C3.93002 3.14442 4.40149 2.83768 4.9227 2.64531C5.34555 2.48097 5.98093 2.28548 7.15091 2.23213C8.4163 2.1744 8.7958 2.16216 12 2.16216L11.9999 2.16221ZM11.9999 0C8.74101 0 8.33222 0.0138144 7.0525 0.0722132C5.77521 0.130517 4.90294 0.333343 4.13965 0.630008C3.33896 0.931324 2.61363 1.40367 2.01424 2.01411C1.40367 2.61347 0.93119 3.33881 0.629765 4.13954C0.333341 4.90288 0.130516 5.77516 0.0724508 7.05246C0.0138138 8.3322 0 8.741 0 12C0 15.2591 0.0138138 15.6678 0.0724508 16.9476C0.130754 18.2249 0.333579 19.0972 0.630241 19.8605C0.931556 20.6612 1.4039 21.3865 2.01433 21.9859C2.61372 22.5963 3.33905 23.0687 4.13975 23.37C4.90308 23.6667 5.77535 23.8695 7.0526 23.9278C8.33251 23.9862 8.74116 24 12.0001 24C15.2591 24 15.6679 23.9862 16.9476 23.9278C18.2249 23.8695 19.0972 23.6667 19.8605 23.37C20.6576 23.0617 21.3816 22.5903 21.9859 21.9859C22.5903 21.3815 23.0617 20.6576 23.37 19.8605C23.6667 19.0971 23.8695 18.2248 23.9278 16.9476C23.9862 15.6677 24 15.259 24 12C24 8.74104 23.9862 8.3322 23.9278 7.05246C23.8695 5.77516 23.6667 4.90288 23.37 4.13959C23.0687 3.33889 22.5963 2.61355 21.9859 2.01416C21.3865 1.4036 20.6611 0.93115 19.8603 0.62977C19.097 0.333343 18.2247 0.130517 16.9474 0.0724514C15.6677 0.0138139 15.2589 0 11.9999 0ZM12.002 5.83789C10.7832 5.83789 9.59184 6.1993 8.57848 6.87641C7.56512 7.55351 6.77531 8.51592 6.30891 9.64191C5.84251 10.7679 5.72048 12.0069 5.95825 13.2023C6.19602 14.3976 6.7829 15.4956 7.64469 16.3574C8.50648 17.2192 9.60447 17.8061 10.7998 18.0438C11.9951 18.2816 13.2341 18.1596 14.3601 17.6932C15.4861 17.2268 16.4485 16.437 17.1256 15.4236C17.8027 14.4102 18.1641 13.2188 18.1641 12.0001C18.1641 10.3658 17.5149 8.79838 16.3593 7.64275C15.2036 6.48712 13.6363 5.83789 12.002 5.83789ZM12.002 16C11.2109 16 10.4375 15.7654 9.77974 15.3259C9.12196 14.8864 8.60929 14.2617 8.30655 13.5308C8.00381 12.7999 7.9246 11.9956 8.07895 11.2197C8.23329 10.4438 8.61425 9.73105 9.17366 9.17165C9.73306 8.61224 10.4458 8.23129 11.2217 8.07695C11.9976 7.92262 12.8019 8.00183 13.5328 8.30458C14.2636 8.60733 14.8883 9.12002 15.3279 9.77781C15.7674 10.4356 16.002 11.209 16.002 12.0001C16.002 13.0609 15.5805 14.0783 14.8304 14.8285C14.0802 15.5786 13.0628 16 12.002 16ZM19.8448 5.59452C19.8448 6.3898 19.2001 7.03451 18.4048 7.03451C17.6095 7.03451 16.9648 6.3898 16.9648 5.59452C16.9648 4.79924 17.6095 4.15454 18.4048 4.15454C19.2001 4.15454 19.8448 4.79924 19.8448 5.59452Z" fill="white"></path></svg>
+									</a>
+									<a href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="social__image" d="M22.2 2.94441e-05H1.8C0.840002 2.94441e-05 1.83105e-06 0.723603 1.83105e-06 1.68843V22.3116C1.83105e-06 23.2764 0.840002 24 1.8 24H22.2C23.16 24 24 23.2764 24 22.3116V1.68843C24 0.844206 23.16 2.94441e-05 22.2 2.94441e-05ZM7.08 20.6231H3.48V9.16583H7.08V20.6231ZM5.28 7.47736C4.08 7.47736 3.24 6.51259 3.24 5.42717C3.24 4.34174 4.2 3.3769 5.28 3.3769C6.36 3.3769 7.32 4.34174 7.32 5.42717C7.44 6.63319 6.48 7.47736 5.28 7.47736ZM20.4 20.6231H16.8V15.0754C16.8 13.7488 16.8 12.0603 15 12.0603C13.2 12.0603 12.84 13.5076 12.84 15.0754V20.7437H9.24001V9.2864H12.6V10.8543C13.08 9.88948 14.28 9.04526 15.96 9.04526C19.56 9.04526 20.28 11.4573 20.28 14.4724V20.6231H20.4Z" fill="white"></path></svg>
+									</a>
+									<a href="#">
+										<svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="social__image" d="M23.4913 2.6307C23.2174 1.60186 22.3957 0.781395 21.3652 0.507907C19.5 0 12 0 12 0C12 0 4.48696 0.0130232 2.62174 0.52093C1.5913 0.794419 0.769565 1.61488 0.495652 2.64372C3.10981e-08 4.50605 0 8.4 0 8.4C0 8.4 0 12.294 0.508696 14.1693C0.782609 15.1981 1.60435 16.0186 2.63478 16.2921C4.5 16.8 12 16.8 12 16.8C12 16.8 19.5 16.8 21.3652 16.2921C22.3957 16.0186 23.2174 15.1981 23.4913 14.1693C24 12.307 24 8.4 24 8.4C24 8.4 24 4.50605 23.4913 2.6307ZM9.6 11.9944V4.80558L15.8348 8.4L9.6 11.9944Z" fill="white"></path></svg>
+									</a>
 								</div>
 								<div class="telegram">
 									<div class="telegram__name">
-										@CambridgeUA
+										<span>@CambridgeUA</span>
 									</div>
 									<div class="telegram__link">
-										<a href="#">Наш Telegram канал</a>
+										<a href="#">
+											<span>Наш Telegram канал</span>
+											<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="telegram__icon" d="M1.28746 7.43077L13.7965 2.36633C15.0312 1.83878 19.2188 0.150633 19.2188 0.150633C19.2188 0.150633 21.1515 -0.587931 20.9905 1.20573C20.9368 1.94429 20.5073 4.52926 20.0778 7.32526L18.7356 15.6077C18.7356 15.6077 18.6283 16.8211 17.7156 17.0321C16.8029 17.2431 15.2997 16.2935 15.0312 16.0825C14.8165 15.9243 11.0047 13.5503 9.60889 12.3897C9.23308 12.0732 8.80359 11.4401 9.66258 10.7016C11.5953 8.96065 13.9038 6.79771 15.2997 5.42609C15.9439 4.79304 16.5882 3.31591 13.9038 5.10957L6.334 10.1213C6.334 10.1213 5.47502 10.6488 3.86442 10.174C2.25382 9.69922 0.374783 9.06616 0.374783 9.06616C0.374783 9.06616 -0.913697 8.27484 1.28746 7.43077Z" fill="white"></path></svg>
+										</a>
 									</div>
 								</div>
 							</div>
-							<div class="user">
-								<h5>Пользователю</h5>
-								<ul>
-									<li><a href="#">Карта сайта</a></li>
-									<li><a href="#">Правила центра</a></li>
-									<li><a href="#">Договор обучения</a></li>
-								</ul>
-							</div>
-							<div class="school">
-								<h5>Наша школа</h5>
-								<ul>
-									<li><a href="#">О компании</a></li>
-									<li><a href="#">Экзамены Cambridge English</a></li>
-									<li><a href="#">Учебные программы</a></li>
-									<li><a href="#">Преподаватели</a></li>
-									<li><a href="#">Почему мы</a></li>
-									<li><a href="#">Вакансии</a></li>
-									<li><a href="#">Контакты</a></li>
-								</ul>
-							</div>
-							<div class="courses">
-								<h5>Курсы английского языка</h5>
-								<ul>
-									<li><a href="#">Английский для взрослых</a></li>
-									<li><a href="#">Английский для подростков</a></li>
-									<li><a href="#">Английский для детей</a></li>
-									<li><a href="#">Английский индивидуально</a></li>
-									<li><a href="#">Подготовка к FCE, CAE, CPE</a></li>
-									<li><a href="#">Английский для работы</a></li>
-									<li><a href="#">Подготовка к IELTS, TOEFL</a></li>
-									<li><a href="#">Корпоративный английский</a></li>
-									<li><a href="#">Клубы, игры, библиотека</a></li>
-								</ul>
+							<div class="footer-menu">
+								<div class="footer-block footer__user">
+									<h5 class="footer-block__header">Пользователю</h5>
+									<ul>
+										<li><a href="#">Карта сайта</a></li>
+										<li><a href="#">Правила центра</a></li>
+										<li><a href="#">Договор обучения</a></li>
+									</ul>
+								</div>
+								<div class="footer-block footer__school">
+									<h5 class="footer-block__header">Наша школа</h5>
+									<ul>
+										<li><a href="#">О компании</a></li>
+										<li><a href="#">Экзамены Cambridge English</a></li>
+										<li><a href="#">Учебные программы</a></li>
+										<li><a href="#">Преподаватели</a></li>
+										<li><a href="#">Почему мы</a></li>
+										<li><a href="#">Вакансии</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+								<div class="footer-block footer__courses">
+									<h5 class="footer-block__header">Курсы английского языка</h5>
+									<ul>
+										<li><a href="#">Английский для взрослых</a></li>
+										<li><a href="#">Английский для подростков</a></li>
+										<li><a href="#">Английский для детей</a></li>
+										<li><a href="#">Английский индивидуально</a></li>
+										<li><a href="#">Подготовка к FCE, CAE, CPE</a></li>
+										<li><a href="#">Английский для работы</a></li>
+										<li><a href="#">Подготовка к IELTS, TOEFL</a></li>
+										<li><a href="#">Корпоративный английский</a></li>
+										<li><a href="#">Клубы, игры, библиотека</a></li>
+									</ul>
+								</div>
+								<div class="footer__image"><img src="images/cambridge-english-qualifications.svg" alt=""></div>
 							</div>
 						</div>
-						<hr>
-						<div class="copyright">© 2009–2022 Официальный подготовительный центр University of Cambridge English Examinations в Украине, лицензия UAPC0121</div>
+						<hr class="footer__line">
+						<div class="footer__copyright">© 2009–2022 Официальный подготовительный центр University of Cambridge English Examinations в Украине, лицензия UAPC0121</div>
 					</div>
 				</div>
 			</footer>		
@@ -844,6 +873,6 @@
 	<script src="https://code.jquery.com/jquery-3.4.0.slim.min.js" integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="slick.min.js"></script>
 	<script src="js/script.js"></script>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	
 </body>
 </html>
