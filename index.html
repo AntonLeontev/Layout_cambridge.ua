@@ -25,21 +25,21 @@
 						<span class="header__name">Первый Кембриджский образовательный центр</span>
 					</div>
 					<div class="header__buttons">
-						<button class="button__courses gradient-button">
+						<button class="button-courses gradient-button">
 							<span>Все курсы</span>
 							<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.72756 0L4.375 3.11049L1.02155 0L0 0.946484L4.375 5L8.75 0.946484L7.72756 0Z" fill="white"/></svg>
 						</button>
-						<button class="button__menu">
+						<button class="button-menu">
 							<span>Меню</span>
 							<svg fill="none" height="9" viewBox="0 0 12 9" width="12" xmlns="http://www.w3.org/2000/svg"><g class="menu__icon" fill="#131313"><path d="m0 0h12v1h-12z"/><path d="m0 4h12v1h-12z"/><path d="m0 8h12v1h-12z"/></g></svg>
 						</button>
 					</div>
-					<a href="#" class="header__link">
+					<a href="#" class="test-level-link header__link">
 						<span>Проверить свой уровень</span>
 						<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.26106 1.01865H0.86947V0H8V7.13053H6.98135V1.73894L0.720292 8L0 7.27971L6.26106 1.01865Z" fill="#131313"/></svg>
 					</a>
-					<address class="address"><span class="metro">м. Золотые ворота </span>ул. Ярославов Вал, 13/2-б</address>
-					<address class="drop-down phone">
+					<address class="address header__address"><span class="metro">м. Золотые ворота </span>ул. Ярославов Вал, 13/2-б</address>
+					<address class="drop-down phone header__phone">
 						<ul class="phone-list">
 							<li class="phone-number">
 								(044) 580 33 00
@@ -50,7 +50,7 @@
 							<li class="phone-number">(098) 580 33 00</li>
 						</ul>
 					</address>
-					<div class="drop-down language">
+					<div class="drop-down language header__language">
 						<ul class="language__list">
 							<li class="language__item">RU
 							<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.72756 0L4.375 3.11049L1.02155 0L0 0.946484L4.375 5L8.75 0.946484L7.72756 0Z" fill="#000000"/></svg></li>
@@ -62,7 +62,7 @@
 					</button>					
 				</div>
 			</div>
-			<div class="menu header__courses" hidden>
+			<div class="menu header__courses">
 				<ul class="menu__list">
 					<li class="menu__item"><a href="#" class="menu__link">
 					<svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>
@@ -78,10 +78,43 @@
 					<li class="menu__item"><a href="#" class="menu__link"><svg fill="none" height="14" viewBox="0 0 13 14" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m12.7748.802115s-6.49584.891585-9.9348 4.330535c-2.037898 2.0379-2.674741 4.96735-2.037896 7.64215 2.802116.7642 5.731596-.1274 7.642126-2.0379 3.69367-3.43897 4.33057-9.934785 4.33057-9.934785z" opacity=".4"></path></svg>Клубы, игры, библиотека</a></li>
 				</ul>				
 			</div>
+			<nav class="menu header__menu">
+				<div class="content-wrap">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#" class="menu__link">Учебные програмы</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Экзамены Cambridge English</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Вакансии</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Преподаватели</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Почему мы</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Скидки на обучение</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
 		</header>		
-		<nav class="menu header__menu">
-			<div class="content-wrap">
-				<ul class="menu__list">
+		<div class="menu side-bar">
+			<div class="content">
+				<div class="side-bar__close-button">
+					<svg width="46" height="46" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#000" d="M13 14.25L14.25 13 33 31.749l-1.251 1.25z"></path> <path fill="#000" d="M31.75 13L33 14.25 14.251 33l-1.25-1.251z"></path></svg>
+				</div>
+				<address class="side-bar__phone">
+					<ul class="side-bar__phone-list">
+							<li class="side-bar__phone-number">
+								<a href="tel:0445803300">(044) 580 33 00</a>
+								<button class="side-bar__phone-button">
+									<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.72756 0L4.375 3.11049L1.02155 0L0 0.946484L4.375 5L8.75 0.946484L7.72756 0Z" fill="#000000"/></svg>
+								</button>
+							</li>
+							<li class="side-bar__phone-number"><a href="tel:0955803300">(095) 580 33 00</a></li>
+							<li class="side-bar__phone-number"><a href="tel:0635803300">(063) 580 33 00</a></li>
+							<li class="side-bar__phone-number"><a href="tel:0985803300">(098) 580 33 00</a></li>
+						</ul>
+				</address>
+				<div class="menu side-bar__menu">
+					<ul class="menu__list">
 					<li class="menu__item"><a href="#" class="menu__link">Учебные програмы</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Экзамены Cambridge English</a></li>
@@ -93,9 +126,24 @@
 					<li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
 				</ul>
+				</div>
+				<a class="test-level-link side-bar__link">
+					<span>Проверить свой уровень</span>
+					<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.26106 1.01865H0.86947V0H8V7.13053H6.98135V1.73894L0.720292 8L0 7.27971L6.26106 1.01865Z" fill="#131313"/></svg>
+				</a>
+				<address class="side-bar-contact side-bar__address">
+					<svg fill="none" height="12" viewBox="0 0 16 12" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m0 11.3013c1.43692-3.77399 2.86771-7.5294 4.30259-11.3013 1.23485 1.94366 2.46154 3.87083 3.69843 5.81862 1.23689-1.94572 2.46158-3.8729 3.69848-5.81862 1.4348 3.7719 2.8656 7.52525 4.3005 11.2951-.0469.002-.0816.0062-.1184.0062-1.2471 0-2.4942 0-3.7413.002-.0837 0-.1224-.0247-.1551-.1051-.4633-1.22019-.9328-2.44038-1.4002-3.66058-.0183-.04947-.0408-.09894-.0755-.17932-.84296 1.55822-1.67164 3.0917-2.50848 4.6417-.83684-1.5479-1.66552-3.07936-2.50848-4.63552-.03062.06802-.05511.11336-.07348.16077-.46333 1.21401-.92869 2.42803-1.38793 3.64205-.03878.101-.08573.136-.19595.136-1.23281-.0041-2.46562-.002-3.700469-.002-.0367393 0-.0755198 0-.134711 0z" fill="#131313"/></svg>
+					<span>Золотые Ворота, ул. Ярославов Вал, 13/2-б</span>
+				</address>
+				<address class="side-bar-contact side-bar__email">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 2.5H1.5C1.22344 2.5 1 2.72344 1 3V13C1 13.2766 1.22344 13.5 1.5 13.5H14.5C14.7766 13.5 15 13.2766 15 13V3C15 2.72344 14.7766 2.5 14.5 2.5ZM13.875 4.23125V12.375H2.125V4.23125L1.69375 3.89531L2.30781 3.10625L2.97656 3.62656H13.025L13.6938 3.10625L14.3078 3.89531L13.875 4.23125ZM13.025 3.625L8 7.53125L2.975 3.625L2.30625 3.10469L1.69219 3.89375L2.12344 4.22969L7.46094 8.37969C7.61444 8.49894 7.80328 8.56367 7.99766 8.56367C8.19203 8.56367 8.38088 8.49894 8.53438 8.37969L13.875 4.23125L14.3062 3.89531L13.6922 3.10625L13.025 3.625Z" fill="black"/></svg>
+					<a href="mailto:info@cambridge.ua">info@cambridge.ua</a>
+				</address>
+				<div class="language"></div>
 			</div>
-		</nav>
-		<div class="cover"></div>
+		</div>
+		<div class="cover cover_small"></div>
+		<div class="cover cover_side"></div>
 		<main class="main">
 			<article class="front-page">
 				<section class="content-wrap">
@@ -870,7 +918,7 @@
 
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.4.0.slim.min.js" integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="slick.min.js"></script>
 	<script src="js/script.js"></script>
 	

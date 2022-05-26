@@ -23,7 +23,7 @@ h2 {
 		padding: 0 50px;
 	}
 }
-@media(max-width: 1270px) {
+@media(max-width: 1280px) {
 	.content-wrap {
 		padding: 0 25px;
 	}

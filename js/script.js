@@ -1,15 +1,25 @@
 "use strict"
-const header = document.querySelector('.header');
-const buttonCourses = document.querySelector('.button__courses');
-const buttonMenu = document.querySelector('.button__menu');
-const subtitleButton = document.querySelector('.subtitle__button');
-const selectWindow = document.querySelector('.select__window');
-const programList = document.querySelector('.studying-programs__list');
+const header = $('.header');
+const programList = $('.studying-programs__list');
+const coverSmall = $('.cover_small');
+const coverSide = $('.cover_side');
+const sideBarPhoneButton = $('.side-bar__phone-button');
 
+const subtitleButton = $('.subtitle__button');
+const selectWindow = $('.select__window');
 
-document.addEventListener('scroll', colorHeader);
-programList.addEventListener('pointerdown', toggleProgramList);
-programList.addEventListener('pointerdown', toggleIcon);
+let activeMenu;
+
+$(document).on('scroll', colorHeader);
+programList.click(toggleProgramList);
+programList.click(toggleIcon);
+$('.button-menu').click(toggleHeaderMenu);
+$('.button-courses').click(toggleCoursesMenu);
+$('.burger-button').click(toggleSideBar);
+$('.side-bar__close-button').click(toggleSideBar);
+$('.side-bar__phone-button').click(toggleSideBarPhone);
+coverSmall.click(hideMenu);
+coverSide.click(hideMenu);
 
 colorHeader();
 
@@ -40,12 +50,16 @@ $(document).ready(function(){
 
 
 function colorHeader() {
-	if (window.pageYOffset == 0) {
-		header.classList.remove('header_scrolled');
+	if (header.hasClass('header__menu-opened')) {
+		header.addClass('header_white');
+		return;
+	}
+	if (window.pageYOffset != 0) {
+		header.addClass('header_white');
 		return;
 	}
 
-	header.classList.add('header_scrolled');
+	header.removeClass('header_white');
 }
 
 function toggleIcon(event) {
@@ -73,4 +87,60 @@ function toggleProgramList(event) {
 
 	let list = target.parentElement.querySelector('.program__list');
 	wrap.style.height = list.offsetHeight + 'px';
+}
+
+function toggleHeaderMenu() {
+	if ($('.header__courses').hasClass('header__courses_active')) {
+		$('.header__courses').removeClass('header__courses_active');
+		$('.header__menu').addClass('header__menu_active');
+		return;
+	}
+
+	$('.header__menu').toggleClass('header__menu_active');
+	toggleCover(coverSmall);
+}
+
+function toggleCoursesMenu() {
+	if ($('.header__menu').hasClass('header__menu_active')) {
+		$('.header__menu').removeClass('header__menu_active');
+		$('.header__courses').addClass('header__courses_active');
+		return;
+	}
+	
+	$('.header__courses').toggleClass('header__courses_active');
+	toggleCover(coverSmall);
+}
+
+function toggleSideBar() {
+	$('.side-bar').toggleClass('side-bar_active');
+	toggleCover(coverSide);
+}
+
+function hideMenu() {
+	$('.header__menu').removeClass('header__menu_active');
+	$('.side-bar').removeClass('side-bar_active');
+	$('.header__courses').removeClass('header__courses_active');
+
+	header.toggleClass('header__menu-opened');
+	$('body').toggleClass('body_overflow-hidden');
+	colorHeader();
+
+	if (coverSmall.hasClass('cover_active')) {
+		coverSmall.removeClass('cover_active');
+		return;
+	}
+
+	coverSide.removeClass('cover_active');
+}
+
+function toggleCover(cover) {
+	cover.toggleClass('cover_active');
+	header.toggleClass('header__menu-opened');
+	$('body').toggleClass('body_overflow-hidden');
+	colorHeader();
+}
+
+function toggleSideBarPhone() {
+	let sideBarPhone = document.querySelector('.side-bar__phone');
+	sideBarPhone.classList.toggle('side-bar__phone_opened');
 }
