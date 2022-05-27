@@ -19,7 +19,8 @@ body {
 	display: flex;	
 	border-bottom: 1px #ccc solid;
 	z-index: 20;
-	font-size: 1rem;	
+	font-size: 1rem;
+	transition: top .4s;	
 }
 @media(max-width: 1500px) {
 	.header {
@@ -30,6 +31,10 @@ body {
 .header_white {
 	background: #fff;
 	border-bottom: solid 1px #fff;
+}
+
+.header_hidden {
+	top: -80px;
 }
 
 .header__inner {
@@ -99,6 +104,9 @@ body {
 	position: relative;
 	z-index: 22;
 }
+.button-courses_active svg {
+	transform: rotateZ(180deg);
+}
 
 .gradient-button::after {
 	content: "";
@@ -157,6 +165,10 @@ body {
 	transition: transform .4s;
 	position: relative;
 	z-index: 2;
+}
+
+.button-menu_active svg {
+	transform: rotateZ(90deg);
 }
 
 .header__link {

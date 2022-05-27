@@ -8,9 +8,10 @@ const sideBarPhoneButton = $('.side-bar__phone-button');
 const subtitleButton = $('.subtitle__button');
 const selectWindow = $('.select__window');
 
-let activeMenu;
+let currentScroll = 0;
 
 $(document).on('scroll', colorHeader);
+$(document).on('scroll', defineHeaderPosition);
 programList.click(toggleProgramList);
 programList.click(toggleIcon);
 $('.button-menu').click(toggleHeaderMenu);
@@ -18,8 +19,12 @@ $('.button-courses').click(toggleCoursesMenu);
 $('.burger-button').click(toggleSideBar);
 $('.side-bar__close-button').click(toggleSideBar);
 $('.side-bar__phone-button').click(toggleSideBarPhone);
+$('.subtitle__button').click(toggleLicence);
+$('.licence__close').click(toggleLicence);
 coverSmall.click(hideMenu);
 coverSide.click(hideMenu);
+$('.front-page__select').click(toggleSelect);
+$('.select__option').click(selectOption);
 
 colorHeader();
 
@@ -92,22 +97,28 @@ function toggleProgramList(event) {
 function toggleHeaderMenu() {
 	if ($('.header__courses').hasClass('header__courses_active')) {
 		$('.header__courses').removeClass('header__courses_active');
+		$('.button-courses').removeClass('button-courses_active');
 		$('.header__menu').addClass('header__menu_active');
+		$('.button-menu').addClass('button-menu_active');
 		return;
 	}
 
 	$('.header__menu').toggleClass('header__menu_active');
+	$('.button-menu').toggleClass('button-menu_active');
 	toggleCover(coverSmall);
 }
 
 function toggleCoursesMenu() {
 	if ($('.header__menu').hasClass('header__menu_active')) {
 		$('.header__menu').removeClass('header__menu_active');
+		$('.button-menu').removeClass('button-menu_active');
 		$('.header__courses').addClass('header__courses_active');
+		$('.button-courses').addClass('button-courses_active');
 		return;
 	}
 	
 	$('.header__courses').toggleClass('header__courses_active');
+	$('.button-courses').toggleClass('button-courses_active');
 	toggleCover(coverSmall);
 }
 
@@ -125,12 +136,10 @@ function hideMenu() {
 	$('body').toggleClass('body_overflow-hidden');
 	colorHeader();
 
-	if (coverSmall.hasClass('cover_active')) {
-		coverSmall.removeClass('cover_active');
-		return;
-	}
-
+	coverSmall.removeClass('cover_active');
 	coverSide.removeClass('cover_active');
+	$('.button-menu').removeClass('button-menu_active');
+	$('.button-courses').removeClass('button-courses_active');
 }
 
 function toggleCover(cover) {
@@ -143,4 +152,32 @@ function toggleCover(cover) {
 function toggleSideBarPhone() {
 	let sideBarPhone = document.querySelector('.side-bar__phone');
 	sideBarPhone.classList.toggle('side-bar__phone_opened');
+}
+
+function defineHeaderPosition() {
+	if (window.pageYOffset - currentScroll > 200) {
+		header.addClass('header_hidden');
+		currentScroll = window.pageYOffset;
+	}
+
+	if (window.pageYOffset - currentScroll < -200) {
+		header.removeClass('header_hidden');
+		currentScroll = window.pageYOffset;
+	}	
+}
+
+function toggleLicence() {
+	$('.licence').toggleClass('licence_hidden');
+	$('body').toggleClass('body_overflow-hidden');
+}
+
+function toggleSelect() {
+	$('.front-page__select').toggleClass('front-page__select_opened');
+}
+
+function selectOption(event) {
+	let target = event.target;
+	$('.select__text').text(target.innerText);
+	$('.select__option_selected').removeClass('select__option_selected');
+	$(target).addClass('select__option_selected');
 }
