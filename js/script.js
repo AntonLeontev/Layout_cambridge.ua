@@ -32,7 +32,7 @@ $(document).ready(function(){
   $('.slider-image').slick({
     adaptiveHeight: false,
     arrows: false,
-    dots: false,
+    dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     asNavFor: '.slider-nav',
@@ -123,6 +123,7 @@ function toggleCoursesMenu() {
 }
 
 function toggleSideBar() {
+	hideMenu();
 	$('.side-bar').toggleClass('side-bar_active');
 	toggleCover(coverSide);
 }
@@ -132,8 +133,8 @@ function hideMenu() {
 	$('.side-bar').removeClass('side-bar_active');
 	$('.header__courses').removeClass('header__courses_active');
 
-	header.toggleClass('header__menu-opened');
-	$('body').toggleClass('body_overflow-hidden');
+	header.removeClass('header__menu-opened');
+	$('body').removeClass('body_overflow-hidden');
 	colorHeader();
 
 	coverSmall.removeClass('cover_active');

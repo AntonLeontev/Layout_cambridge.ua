@@ -82,6 +82,23 @@ body {
 	font-size: inherit;
 	color: #fff;
 }
+.gradient-button::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #cf5657;
+	opacity: 0;
+	z-index: 1;
+	transition: opacity .4s;
+}
+
+.gradient-button:hover::after {	
+	opacity: 1;
+}
 
 .button-courses {
 	padding: 10px 30px;
@@ -106,24 +123,6 @@ body {
 }
 .button-courses_active svg {
 	transform: rotateZ(180deg);
-}
-
-.gradient-button::after {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #cf5657;
-	opacity: 0;
-	z-index: 1;
-	transition: opacity .4s;
-}
-
-.gradient-button:hover::after {	
-	opacity: 1;
 }
 
 .button-menu {
@@ -288,6 +287,11 @@ body {
 	margin-left: auto;
 	background: transparent;	
 }
+@media(max-width: 500px) {
+	.burger-button {
+		margin-right: 15px;
+	}
+}
 .burger-button svg {
 	transform: scale(1.2);
 }
@@ -430,6 +434,8 @@ body {
 	background: #00000055;
 	z-index: 10;
 	display: none;
+	-webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
 }
 .cover_side {
 	z-index: 20;
