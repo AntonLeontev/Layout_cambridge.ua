@@ -10,14 +10,14 @@ const selectWindow = $('.select__window');
 
 let currentScroll = 0;
 
-$(document).on('scroll', colorHeader);
-$(document).on('scroll', defineHeaderPosition);
+document.addEventListener('scroll', colorHeader, {passive: true});
+document.addEventListener('scroll', defineHeaderPosition, {passive: true});
 programList.click(toggleProgramList);
 programList.click(toggleIcon);
 $('.button-menu').click(toggleHeaderMenu);
 $('.button-courses').click(toggleCoursesMenu);
 $('.burger-button').click(toggleSideBar);
-$('.side-bar__close-button').click(toggleSideBar);
+$('.side-bar__close-button').click(hideMenu);
 $('.side-bar__phone-button').click(toggleSideBarPhone);
 $('.subtitle__button').click(toggleLicence);
 $('.licence__close').click(toggleLicence);

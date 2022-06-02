@@ -5,12 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Курсы английского языка в Киеве. Лицензия от Cambridge</title>
 
-	<link rel="preload" as="font" href="fonts/Formular-Bold.woff" crossorigin>
 	<link rel="preload" as="font" href="fonts/Formular-Medium.woff" crossorigin>
 	<link rel="preload" as="font" href="fonts/Formular.woff" crossorigin>
-	<link rel="preload" as="font" href="fonts/IBMPlexSerif-Light.woff" crossorigin>
 	<link rel="preload" as="font" href="fonts/IBMPlexSerif-Medium.woff" crossorigin>
-	<link rel="preload" as="font" href="fonts/IBMPlexSerif-SemiBold.woff" crossorigin>
 
 	<link rel="stylesheet" href="css/styles.css">
 
@@ -151,19 +148,19 @@
 		<div class="cover cover_small"></div>
 		<div class="cover cover_side"></div>
 		<main class="main">
-			<article class="front-page">
-				<section class="content-wrap">
-					<div class="front-page__inner">	
+			<div class="front-page">
+				<div class="content-wrap">
+					<section class="front-page__inner">	
 						<div class="front-page__text">
 							<h1 class="front-page__title">Курсы английского в Киеве Cambridge Assessment English</h1>
 							<p class="front-page__subtitle subtitle">
-								Официальный подготовительный центр <button class="subtitle__button"><strong>(UAPC0121)</strong></button> при <a href="#" class="subtitle__link"><strong>Grade Education Centre</strong></a>
+								Официальный подготовительный центр <button class="subtitle__button"><b>(UAPC0121)</b></button> при <a href="#" class="subtitle__link"><strong>Grade Education Centre</strong></a>
 							</p>
 							<div class="front-page__form">
 								<div class="front-page__select select">
 									<div class="select__window">
 										<span class="select__text">Английский для взрослых</span>
-										<svg width='9' height='5' viewBox='0 0 9 5' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M7.72756 0L4.375 3.11049L1.02155 0L0 0.946484L4.375 5L8.75 0.946484L7.72756 0Z' fill='black'></svg>
+										<svg width='9' height='5' viewBox='0 0 9 5' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M7.72756 0L4.375 3.11049L1.02155 0L0 0.946484L4.375 5L8.75 0.946484L7.72756 0Z' fill='black'/></svg>
 										<ul class="select__option-list">
 											<li class="select__option select__option_selected">Английский для взрослых</li>
 											<li class="select__option">Английский для детей</li>
@@ -177,12 +174,12 @@
 						<div class="front-page__image">
 							<picture>
 								<source srcset='images/front-page-image.webp'>
-								<img src="images/front-page-image.png">
+								<img src="images/front-page-image.png" alt="Рисунок главной страницы">
 							</picture>
 						</div>					
-					</div>		
-				</section>
-				<section class="stats front-page__stats">
+					</section>		
+				</div>
+				<div class="stats front-page__stats">
 					<div class="content-wrap">
 						<ul class="stats__list">
 							<li class="stats__item statistics__item">
@@ -203,8 +200,8 @@
 							</li>
 						</ul>
 					</div>
-				</section>
-				<section class="licence licence_hidden">
+				</div>
+				<div class="licence licence_hidden">
 					<button class="licence__close">
 						<svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#131313" d="M17.969 18.386L.999 1.416 2.412.002l16.97 16.97z"></path> <path fill="#131313" d="M19.387 1.414L2.416 18.384l-1.414-1.413L17.972 0z"></path></svg>
 					</button>
@@ -214,8 +211,8 @@
 							<img src="images/licence.jpg" alt="Лицензия">
 						</picture>							
 					</div>
-				</section>
-			</article>
+				</div>
+			</div>
 			<article class="studying-programs">
 				<div class="content-wrap">
 					<div class="studying-programs__inner">
@@ -462,13 +459,13 @@
 							</li>
 							<li class="grid__item grid__image">
 								<picture>
-									<sourse srcset="images/teachers.webp"></sourse>
+									<source srcset="images/teachers.webp">
 									<img src="images/teachers.jpg" alt="Наши преподователи">
 								</picture>
 							</li>
 							<li class="grid__item grid__image">
 								<picture>
-									<sourse srcset="images/teachers2.webp"></sourse>
+									<source srcset="images/teachers2.webp">
 									<img src="images/teachers2.jpg" alt="Наши преподователи">
 								</picture>
 							</li>
@@ -494,7 +491,7 @@
 							</li>
 							<li class="grid__item grid__image">
 								<picture>
-									<sourse srcset="images/teachers3.webp"></sourse>
+									<source srcset="images/teachers3.webp">
 									<img src="images/teachers3.jpg" alt="Наши преподователи">
 								</picture>
 							</li>
@@ -529,12 +526,12 @@
 								<p class="item__text">Вы начинаете обучение!</p>
 							</li>
 						</ul>
-						<picture>
-							<sourse srcset="images/front_page_sign-up.webp"></sourse>
-							<img src="images/front_page_sign-up.png" alt="">
-						</picture>
 					</div>
 				</div>
+				<picture>
+					<source srcset="images/front_page_sign-up.webp">
+					<img class="enrollment__image" src="images/front_page_sign-up.png" alt="">
+				</picture>
 			</article>
 			<article class="start">
 				<div class="content-wrap">
@@ -544,7 +541,7 @@
 							<p class="start__subheading">Оставьте заявку, и мы вам перезвоним!</p>
 							<picture>
 								<source srcset="images/front_page-form.webp">
-								<img src="images/front_page-form.png" alt="">
+								<img class="start__image" src="images/front_page-form.png" alt="">
 							</picture>
 						</div>
 						<div class="start__column column-form">
@@ -570,7 +567,7 @@
 									<option value="">Английский индивидуально</option>
 									<option value="">Корпоративный английский</option>
 								</select>
-								<input id="comment" name="comment" type="textarea" placeholder="Комментарий">
+								<textarea id="comment" name="comment" placeholder="Комментарий"></textarea>
 								<div class="checkbox-wrap">								
 									<input type="checkbox" id="studied" name="studied">
 									<label class="label-checkbox" for="studied">
@@ -599,7 +596,7 @@
 									<source srcset="images/benefits-1680.webp" media="(max-width: 1680px)">
 									<source srcset="images/benefits-1680.png" media="(max-width: 1680px)">
 									<source srcset="images/benefits.webp">
-									<img src="images/benefits.png">
+									<img class="benefits__image" src="images/benefits.png" alt="Преимущества">
 								</picture>
 							</div>
 						</div>
@@ -670,14 +667,12 @@
 				<div class="content-wrap">
 					<div class="levels__inner">
 						<div class="levels__header">
-							<div>
-								<h2>Уровни английского языка</h2>
-								<a href="#">
-									Скачать в PDF
-									<svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.710937 13.7074L10.9966 24L21.2823 13.7108L20.0738 12.4988L11.8538 20.7189L11.8538 -4.87068e-07L10.1395 -4.12136e-07L10.1395 20.7189L1.91607 12.4954L0.710937 13.7074Z" fill="#a14669"></path></svg>
-								</a>
-							</div>
+							<h2>Уровни английского языка</h2>
 							<p> В своей работе мы ориентируемся на международные стандарты и при распределении уровней используем CEFR (Common European Framework of References): </p>
+							<a href="#">
+								Скачать в PDF
+								<svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.710937 13.7074L10.9966 24L21.2823 13.7108L20.0738 12.4988L11.8538 20.7189L11.8538 -4.87068e-07L10.1395 -4.12136e-07L10.1395 20.7189L1.91607 12.4954L0.710937 13.7074Z" fill="#a14669"></path></svg>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -694,11 +689,11 @@
 					</div>
 				</div>
 				<picture class="test__bg-left">
-					<sourse srcset="images/test_left.webp"></sourse>
+					<source srcset="images/test_left.webp">
 					<img src="images/test_left.png" alt="">
 				</picture>
 				<picture class="test__bg-right">
-					<sourse srcset="images/test_right.webp"></sourse>
+					<source srcset="images/test_right.webp">
 					<img src="images/test_right.png" alt="">
 				</picture>
 			</section>
@@ -865,7 +860,7 @@
 						<div class="footer__info">
 							<div class="footer-block footer__contacts">
 								<h5 class="footer-block__header">Контакты</h5>
-								<address>Киев, 01054, Украина, ул. Ярославов Вал, 13/2-Б, 1 этаж, офис 39. Ближайшая станция метро — Золотые Ворота</address>
+								<address class="footer-block__address">Киев, 01054, Украина, ул. Ярославов Вал, 13/2-Б, 1 этаж, офис 39. Ближайшая станция метро — Золотые Ворота</address>
 								<div class="social-media">
 									<a href="#">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="social__image" d="M22.65 0H1.35C0.6 0 0 0.6 0 1.35V22.65C0 23.4 0.6 24 1.35 24H12.9V14.7H9.75V11.1H12.9V8.4C12.9 5.25 14.85 3.6 17.55 3.6C18.45 3.6 19.35 3.6 20.4 3.75V7.05H18.45C16.95 7.05 16.65 7.8 16.65 8.85V11.1H20.25L19.8 14.7H16.5V24H22.65C23.4 24 24 23.4 24 22.65V1.35C24 0.6 23.4 0 22.65 0Z" fill="white"></path></svg>
@@ -929,18 +924,75 @@
 								</div>
 								<div class="footer__image"><img src="images/cambridge-english-qualifications.svg" alt=""></div>
 							</div>
+							<div class="footer-mobile-menu">
+								<ul class="studying-programs__list">
+									<li class="studying-programs__item program">
+										<div class="program__heading">
+											<p>Пользователю</p>
+											<span>+</span>
+										</div>
+										<div class="program-wrap">
+											<ul class="program__list">
+												<li class="program__item footer__item">
+													<a href="#" class="program__link footer__link">
+														<span class="program__text">Карта сайта</span>
+													</a>
+												</li>
+												<li class="program__item footer__item"><a href="#" class="program__link footer__link">
+														<span class="program__text">Правила центра</span>
+													</a>
+												</li>
+												<li class="program__item footer__item"><a href="#" class="program__link footer__link">
+														<span class="program__text">Договор</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="studying-programs__item program">
+										<div class="program__heading">
+											<p>Наша школа</p>
+											<span>+</span>
+										</div>
+										<div class="program-wrap">
+											<ul class="program__list">
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">О компании</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Экзамены Cambridge English</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Учебные программы</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Преподаватели</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Почему мы</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Вакансии</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Контакты</span></a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="studying-programs__item program">
+										<div class="program__heading">
+											<p>Курсы английского языка Сambridge</p>
+											<span>+</span>
+										</div>
+										<div class="program-wrap">
+											<ul class="program__list">
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Английский для подростков</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Английский для детей</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Английский индивидуально</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Подготовка к FCE, CAE, CPE</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Английский для работы</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Подготовка к IELTS, TOEFL</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Корпоративный английский</span></a></li>
+												<li class="program__item footer__item"><a href="" class="program__link footer__link"><span class="program__text">Клубы, игры, библиотека</span></a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
 						</div>
 						<hr class="footer__line">
 						<div class="footer__copyright">© 2009–2022 Официальный подготовительный центр University of Cambridge English Examinations в Украине, лицензия UAPC0121</div>
 					</div>
 				</div>
-			</footer>		
-
-			
+			</footer>			
 		</main>
-
-
-
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
