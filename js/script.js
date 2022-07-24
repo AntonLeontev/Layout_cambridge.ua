@@ -30,6 +30,7 @@ colorHeader();
 
 $(document).ready(function(){
   $('.slider-image').slick({
+  	lazyLoad: 'ondemand',
     adaptiveHeight: false,
     arrows: false,
     dots: true,
